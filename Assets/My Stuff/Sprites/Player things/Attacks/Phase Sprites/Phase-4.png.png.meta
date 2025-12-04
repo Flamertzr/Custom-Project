@@ -1,0 +1,1742 @@
+fileFormatVersion: 2
+guid: e64357689e3ab6a468c8f42f180f1ef0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -825145911816314193
+    second: Phase-4.png_0
+  - first:
+      213: -5508677917136441709
+    second: Phase-4.png_1
+  - first:
+      213: 9055839715862182256
+    second: Phase-4.png_2
+  - first:
+      213: 22670866109651533
+    second: Phase-4.png_3
+  - first:
+      213: 6061822000895135899
+    second: Phase-4.png_4
+  - first:
+      213: 3042265012666510607
+    second: Phase-4.png_5
+  - first:
+      213: -2321237245379286871
+    second: Phase-4.png_6
+  - first:
+      213: -9031725327649968968
+    second: Phase-4.png_7
+  - first:
+      213: 8459412488533660867
+    second: Phase-4.png_8
+  - first:
+      213: 2844954496943475311
+    second: Phase-4.png_9
+  - first:
+      213: 1188755172113807753
+    second: Phase-4.png_10
+  - first:
+      213: 6833747336941069254
+    second: Phase-4.png_11
+  - first:
+      213: -3700818532408935016
+    second: Phase-4.png_12
+  - first:
+      213: -5144361434119793550
+    second: Phase-4.png_13
+  - first:
+      213: 7417073479590329041
+    second: Phase-4.png_14
+  - first:
+      213: 8330262574995633458
+    second: Phase-4.png_15
+  - first:
+      213: 7092454994653140566
+    second: Phase-4.png_16
+  - first:
+      213: 2819603937482954553
+    second: Phase-4.png_17
+  - first:
+      213: -9078257555220815536
+    second: Phase-4.png_18
+  - first:
+      213: -5819806006584017375
+    second: Phase-4.png_19
+  - first:
+      213: 7525643712869918520
+    second: Phase-4.png_20
+  - first:
+      213: -2754302564185781184
+    second: Phase-4.png_21
+  - first:
+      213: -9034156059039301903
+    second: Phase-4.png_22
+  - first:
+      213: -7250375526168238311
+    second: Phase-4.png_23
+  - first:
+      213: 2087167830484321073
+    second: Phase-4.png_24
+  - first:
+      213: -9180304234736765
+    second: Phase-4.png_25
+  - first:
+      213: 4739447927468565593
+    second: Phase-4.png_26
+  - first:
+      213: -2316492232282347802
+    second: Phase-4.png_27
+  - first:
+      213: -433636346809191169
+    second: Phase-4.png_28
+  - first:
+      213: -4193416204310165906
+    second: Phase-4.png_29
+  - first:
+      213: 2200519027007175797
+    second: Phase-4.png_30
+  - first:
+      213: 5241248857710172278
+    second: Phase-4.png_31
+  - first:
+      213: 5469575815987898170
+    second: Phase-4.png_32
+  - first:
+      213: -3429171996476027414
+    second: Phase-4.png_33
+  - first:
+      213: -3114667108145163015
+    second: Phase-4.png_34
+  - first:
+      213: -3955284177082148997
+    second: Phase-4.png_35
+  - first:
+      213: -8808899165568783920
+    second: Phase-4.png_36
+  - first:
+      213: 6502015901849454000
+    second: Phase-4.png_37
+  - first:
+      213: 3841731256146488236
+    second: Phase-4.png_38
+  - first:
+      213: -1247116520254888191
+    second: Phase-4.png_39
+  - first:
+      213: 8513995609978274809
+    second: Phase-4.png_40
+  - first:
+      213: 6385658892460574934
+    second: Phase-4.png_41
+  - first:
+      213: -3048672949172537037
+    second: Phase-4.png_42
+  - first:
+      213: -7849043599827566275
+    second: Phase-4.png_43
+  - first:
+      213: 8723067421902617851
+    second: Phase-4.png_44
+  - first:
+      213: 5443893381128468891
+    second: Phase-4.png_45
+  - first:
+      213: -6470148165209917874
+    second: Phase-4.png_46
+  - first:
+      213: -3814767439003511034
+    second: Phase-4.png_47
+  - first:
+      213: -5097738273124708840
+    second: Phase-4.png_48
+  - first:
+      213: 2523570787962237069
+    second: Phase-4.png_49
+  - first:
+      213: 2976553706934365459
+    second: Phase-4.png_50
+  - first:
+      213: 8519598238685616748
+    second: Phase-4.png_51
+  - first:
+      213: -5690201744482691754
+    second: Phase-4.png_52
+  - first:
+      213: -4874832426032744260
+    second: Phase-4.png_53
+  - first:
+      213: -3661786278568138091
+    second: Phase-4.png_54
+  - first:
+      213: 7284498230080467707
+    second: Phase-4.png_55
+  - first:
+      213: -6137670849244686714
+    second: Phase-4.png_56
+  - first:
+      213: -455567388392627982
+    second: Phase-4.png_57
+  - first:
+      213: -4118049108530794226
+    second: Phase-4.png_58
+  - first:
+      213: -640439918324948810
+    second: Phase-4.png_59
+  - first:
+      213: 728818753252868576
+    second: Phase-4.png_60
+  - first:
+      213: -6902087632197714035
+    second: Phase-4.png_61
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Phase-4.png_0
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 815
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa2a25e3a2e7c84f0800000000000000
+      internalID: -825145911816314193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 751
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39e2b0fde9e3d83b0800000000000000
+      internalID: -5508677917136441709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_2
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 751
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 079f6dedd3eccad70800000000000000
+      internalID: 9055839715862182256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_3
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 751
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4a5739580b805000800000000000000
+      internalID: 22670866109651533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_4
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 751
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b90900f2efaef1450800000000000000
+      internalID: 6061822000895135899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_5
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 751
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0d269019eb483a20800000000000000
+      internalID: 3042265012666510607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_6
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 687
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a8e2c5160f49cfd0800000000000000
+      internalID: -2321237245379286871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_7
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 687
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bc6688aaadd8a280800000000000000
+      internalID: -9031725327649968968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_8
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 687
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c45d83a6ded56570800000000000000
+      internalID: 8459412488533660867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_9
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 687
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6a4770ba0f4b7720800000000000000
+      internalID: 2844954496943475311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_10
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 687
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98970ced78e4f7010800000000000000
+      internalID: 1188755172113807753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_11
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 687
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c3e4270ff856de50800000000000000
+      internalID: 6833747336941069254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_12
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 687
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89d359d072d04acc0800000000000000
+      internalID: -3700818532408935016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_13
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 687
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 274121b188e8b98b0800000000000000
+      internalID: -5144361434119793550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_14
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 687
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dab3f7480dbee660800000000000000
+      internalID: 7417073479590329041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_15
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 623
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23578542da90b9370800000000000000
+      internalID: 8330262574995633458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_16
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 623
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 656debd7d367d6260800000000000000
+      internalID: 7092454994653140566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_17
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 623
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 937d6fc97de312720800000000000000
+      internalID: 2819603937482954553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_18
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 623
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 051ae892adc830280800000000000000
+      internalID: -9078257555220815536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_19
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 623
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12effdb8545eb3fa0800000000000000
+      internalID: -5819806006584017375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_20
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 623
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83763c39515707860800000000000000
+      internalID: 7525643712869918520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_21
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 623
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04c42c92960c6c9d0800000000000000
+      internalID: -2754302564185781184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_22
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 559
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fef487edea30a280800000000000000
+      internalID: -9034156059039301903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_23
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 559
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9176e828fdd716b90800000000000000
+      internalID: -7250375526168238311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_24
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 559
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13304a2651c17fc10800000000000000
+      internalID: 2087167830484321073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_25
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 559
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 383982bdf826fdff0800000000000000
+      internalID: -9180304234736765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_26
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 559
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 954a93487c6e5c140800000000000000
+      internalID: 4739447927468565593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_27
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 559
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e6ebd9869a2adfd0800000000000000
+      internalID: -2316492232282347802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_28
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 559
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff47db24a0a6bf9f0800000000000000
+      internalID: -433636346809191169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_29
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 495
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e66c9ba0e2efdc5c0800000000000000
+      internalID: -4193416204310165906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_30
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 495
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57c304e6560d98e10800000000000000
+      internalID: 2200519027007175797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_31
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 495
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6789c371118acb840800000000000000
+      internalID: 5241248857710172278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_32
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 495
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a37a600c936d7eb40800000000000000
+      internalID: 5469575815987898170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_33
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 495
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aed445cdc322960d0800000000000000
+      internalID: -3429171996476027414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_34
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 495
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f41a6174ca76c4d0800000000000000
+      internalID: -3114667108145163015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_35
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 495
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b779b473ff10c19c0800000000000000
+      internalID: -3955284177082148997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_36
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 431
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d9a90661e080c580800000000000000
+      internalID: -8808899165568783920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_37
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 431
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b58da9730dcb3a50800000000000000
+      internalID: 6502015901849454000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_38
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 431
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cab602d1932905530800000000000000
+      internalID: 3841731256146488236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_39
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 431
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 107afa0e12a51bee0800000000000000
+      internalID: -1247116520254888191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_40
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 431
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f38dffe5e9c72670800000000000000
+      internalID: 8513995609978274809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_41
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 431
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d84de51eea6e9850800000000000000
+      internalID: 6385658892460574934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_42
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 431
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3397a34fa10f0b5d0800000000000000
+      internalID: -3048672949172537037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_43
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 431
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3189b59e68921390800000000000000
+      internalID: -7849043599827566275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_44
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 431
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfcb94a7a9f8e0970800000000000000
+      internalID: 8723067421902617851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_45
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 431
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b993349ef289c8b40800000000000000
+      internalID: 5443893381128468891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_46
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 431
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e467488268a6536a0800000000000000
+      internalID: -6470148165209917874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_47
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 367
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6071879c9393f0bc0800000000000000
+      internalID: -3814767439003511034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_48
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 367
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81e0d70bc023149b0800000000000000
+      internalID: -5097738273124708840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_49
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 367
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d80ba0ed246850320800000000000000
+      internalID: 2523570787962237069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_50
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 367
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31de1b473d7de4920800000000000000
+      internalID: 2976553706934365459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_51
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 367
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6a56e59571bb3670800000000000000
+      internalID: 8519598238685616748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_52
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 367
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6551dcf49a75801b0800000000000000
+      internalID: -5690201744482691754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_53
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 367
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb833ca8cbd195cb0800000000000000
+      internalID: -4874832426032744260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_54
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 367
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59aeb86d7c8be2dc0800000000000000
+      internalID: -3661786278568138091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_55
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 367
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf278ea9b8cb71560800000000000000
+      internalID: 7284498230080467707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_56
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 367
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6861082a1ec92daa0800000000000000
+      internalID: -6137670849244686714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_57
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 367
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f0ea9bbfdf7da9f0800000000000000
+      internalID: -455567388392627982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_58
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 303
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0178667720c9d6c0800000000000000
+      internalID: -4118049108530794226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_59
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 303
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b0e2489943bc17f0800000000000000
+      internalID: -640439918324948810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_60
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 303
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e1c74d6bc84d1a00800000000000000
+      internalID: 728818753252868576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phase-4.png_61
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 303
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8ffc3a0edbd630a0800000000000000
+      internalID: -6902087632197714035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Phase-4.png_0: -825145911816314193
+      Phase-4.png_1: -5508677917136441709
+      Phase-4.png_10: 1188755172113807753
+      Phase-4.png_11: 6833747336941069254
+      Phase-4.png_12: -3700818532408935016
+      Phase-4.png_13: -5144361434119793550
+      Phase-4.png_14: 7417073479590329041
+      Phase-4.png_15: 8330262574995633458
+      Phase-4.png_16: 7092454994653140566
+      Phase-4.png_17: 2819603937482954553
+      Phase-4.png_18: -9078257555220815536
+      Phase-4.png_19: -5819806006584017375
+      Phase-4.png_2: 9055839715862182256
+      Phase-4.png_20: 7525643712869918520
+      Phase-4.png_21: -2754302564185781184
+      Phase-4.png_22: -9034156059039301903
+      Phase-4.png_23: -7250375526168238311
+      Phase-4.png_24: 2087167830484321073
+      Phase-4.png_25: -9180304234736765
+      Phase-4.png_26: 4739447927468565593
+      Phase-4.png_27: -2316492232282347802
+      Phase-4.png_28: -433636346809191169
+      Phase-4.png_29: -4193416204310165906
+      Phase-4.png_3: 22670866109651533
+      Phase-4.png_30: 2200519027007175797
+      Phase-4.png_31: 5241248857710172278
+      Phase-4.png_32: 5469575815987898170
+      Phase-4.png_33: -3429171996476027414
+      Phase-4.png_34: -3114667108145163015
+      Phase-4.png_35: -3955284177082148997
+      Phase-4.png_36: -8808899165568783920
+      Phase-4.png_37: 6502015901849454000
+      Phase-4.png_38: 3841731256146488236
+      Phase-4.png_39: -1247116520254888191
+      Phase-4.png_4: 6061822000895135899
+      Phase-4.png_40: 8513995609978274809
+      Phase-4.png_41: 6385658892460574934
+      Phase-4.png_42: -3048672949172537037
+      Phase-4.png_43: -7849043599827566275
+      Phase-4.png_44: 8723067421902617851
+      Phase-4.png_45: 5443893381128468891
+      Phase-4.png_46: -6470148165209917874
+      Phase-4.png_47: -3814767439003511034
+      Phase-4.png_48: -5097738273124708840
+      Phase-4.png_49: 2523570787962237069
+      Phase-4.png_5: 3042265012666510607
+      Phase-4.png_50: 2976553706934365459
+      Phase-4.png_51: 8519598238685616748
+      Phase-4.png_52: -5690201744482691754
+      Phase-4.png_53: -4874832426032744260
+      Phase-4.png_54: -3661786278568138091
+      Phase-4.png_55: 7284498230080467707
+      Phase-4.png_56: -6137670849244686714
+      Phase-4.png_57: -455567388392627982
+      Phase-4.png_58: -4118049108530794226
+      Phase-4.png_59: -640439918324948810
+      Phase-4.png_6: -2321237245379286871
+      Phase-4.png_60: 728818753252868576
+      Phase-4.png_61: -6902087632197714035
+      Phase-4.png_7: -9031725327649968968
+      Phase-4.png_8: 8459412488533660867
+      Phase-4.png_9: 2844954496943475311
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
