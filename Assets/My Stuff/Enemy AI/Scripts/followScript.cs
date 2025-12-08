@@ -3,8 +3,8 @@ using UnityEngine;
 public class followScript : MonoBehaviour
 {
     [SerializeField] public float test;
+    [SerializeField] public float speed;
     public GameObject player;
-    public float speed;
 
     private float distance;
 
