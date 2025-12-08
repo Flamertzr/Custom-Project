@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class followScript : MonoBehaviour
 {
+    [SerializeField] public float test;
     public GameObject player;
     public float speed;
 
