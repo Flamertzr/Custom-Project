@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class enemyHurtScript : MonoBehaviour
 {
-    [SerializeField] public float flashDuration;
+
     public static float iframesDuration = 2;
     public static int health = 100;
 
@@ -39,18 +39,18 @@ public class enemyHurtScript : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
-        if (other.CompareTag("Hitbox") && iframes <= 0)
+        if (other.CompareTag("Hitbox"))
         {
             iframes = iframesDuration;
             health -= 1;
-            StartCoroutine(hit());
+            StartCoroutine(hits());
         }
     }
 
-    private System.Collections.IEnumerator hit()
+    private System.Collections.IEnumerator hits()
     {
         sprite.color = Color.red;        
-        yield return new WaitForSeconds(flashDuration);
+        yield return new WaitForSeconds(1);
         sprite.color = originalColor;    
     }
 }
