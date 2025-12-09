@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 6316287622172718353}
   - component: {fileID: 5300403159785492732}
   - component: {fileID: 4116776051118400905}
-  - component: {fileID: 9046077029580630236}
   - component: {fileID: -8963576279468248497}
+  - component: {fileID: 837107602453170106}
   m_Layer: 11
   m_Name: Curse 1
   m_TagString: Untagged
@@ -167,18 +167,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &9046077029580630236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2550182195819609763}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4e280b2f59cc654cbe1a62f6a959f64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::followScript
 --- !u!114 &-8963576279468248497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,5 +179,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2117ce0a05b1c345bb93bde27b52c55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::enemyHurtScript
-  player: {fileID: 0}
+  test: 0
   speed: 20
+  player: {fileID: 0}
+--- !u!114 &837107602453170106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2550182195819609763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4dfae0fa0489924f8437e8828d08069, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::enemyHurtScript
+  iframes: 0.5
+  iframesDuration: 0.3
+  health: 100

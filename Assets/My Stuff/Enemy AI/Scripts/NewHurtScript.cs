@@ -2,16 +2,17 @@ using UnityEngine;
 
 public class enemyHurtScript : MonoBehaviour
 {
+    [SerializeField] public float iframes;
+    [SerializeField] public float iframesDuration;
+    [SerializeField] public int health = 100;
+    public bool dead = false;
 
-    public static float iframesDuration = 2;
-    public static int health = 100;
-
-    private static float iframes;
     private BoxCollider2D boxCollider;
     private SpriteRenderer sprite;
     private Color originalColor;
     private GameObject player;
     private PlayerAttackScript playerAttack;
+    
 
     
 
@@ -33,13 +34,13 @@ public class enemyHurtScript : MonoBehaviour
         iframes -= Time.deltaTime;
         if (health <=0)
         {
-            Debug.Log("Death");
+            dead = true;
         }
     }
 
     void OnTriggerStay2D(Collider2D other)
     {
-        if (other.CompareTag("Hitbox"))
+        if (other.CompareTag("Hitbox") && iframes < iframesDuration)
         {
             iframes = iframesDuration;
             health -= 1;
@@ -50,7 +51,8 @@ public class enemyHurtScript : MonoBehaviour
     private System.Collections.IEnumerator hits()
     {
         sprite.color = Color.red;        
-        yield return new WaitForSeconds(1);
-        sprite.color = originalColor;    
+        yield return new WaitForSeconds(.2f);
+        sprite.color = originalColor;  
+        yield return new WaitForSeconds(iframesDuration);  
     }
 }
