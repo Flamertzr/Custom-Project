@@ -7,6 +7,7 @@ public class enemyHurtScript : MonoBehaviour
     [SerializeField] public int health = 100;
 
     public bool dead = false;
+    private bool flashing = false;
 
     private GameObject enemy;
     private Rigidbody2D body;
@@ -59,14 +60,20 @@ public class enemyHurtScript : MonoBehaviour
         {
             iframes = iframesDuration;
             health -= 1;
-            StartCoroutine(hits());
+            if (flashing == false)
+            {
+                StartCoroutine(hits());
+            }
         }
     }
 
     private System.Collections.IEnumerator hits()
     {
-            sprite.color = Color.red;        
-            yield return new WaitForSeconds(.5f);
-            sprite.color = originalColor;
+        flashing = true;
+        sprite.color = Color.red;        
+        yield return new WaitForSeconds(.2f);
+        sprite.color = originalColor;
+        yield return new WaitForSeconds(iframesDuration - 0.2f);
+        flashing = false;
     }
 }
