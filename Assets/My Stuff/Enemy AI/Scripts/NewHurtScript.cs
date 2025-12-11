@@ -56,10 +56,10 @@ public class enemyHurtScript : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
-        if (other.CompareTag("Hitbox") && iframes < iframesDuration)
+        if (other.CompareTag("Hitbox") && iframes < -iframesDuration)
         {
             iframes = iframesDuration;
-            health -= 1;
+            health -= playerAttack.currDmg;
             if (flashing == false)
             {
                 StartCoroutine(hits());

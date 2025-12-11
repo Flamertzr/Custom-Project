@@ -20,6 +20,13 @@ public class PlayerAttackScript : MonoBehaviour
     public static float dashTimer = 0;
     public static float phaseTimer = 0;
     public static float ultTimer = 0;
+
+    public static int slashDmg = 10;
+    public static int dashDmg = 15;
+    public static int ultDmg = 100;
+
+
+    public int currDmg = 0;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -43,6 +50,7 @@ public class PlayerAttackScript : MonoBehaviour
         {
             anim.SetBool("Down Slash", true);
             isAttacking = true;
+            currDmg = slashDmg;
         }
 
         if (Input.GetKeyDown(KeyCode.X) && !isAttacking && dash())
@@ -50,6 +58,7 @@ public class PlayerAttackScript : MonoBehaviour
             anim.SetBool("Dash", true);
             isAttacking = true;
             isDashing = true;
+            currDmg = dashDmg;
         }
 
         if (Input.GetKeyDown(KeyCode.C) && !isAttacking && phase())
@@ -65,6 +74,7 @@ public class PlayerAttackScript : MonoBehaviour
             //anim.SetBool("G Pressed", true);
             //isAttacking = true;
             //isUlting = true;
+            //currDmg = ultDmg;
         }
 
         if (isAttacking)
@@ -75,12 +85,14 @@ public class PlayerAttackScript : MonoBehaviour
             {
                 isAttacking = false;
                 anim.SetBool("Down Slash", false);
+                currDmg = 0;
             }
             if (stateInfo.IsName("Dash") && stateInfo.normalizedTime >= 1.0f && isAttacking)
             {
                 isAttacking = false;
                 isDashing = false;
                 anim.SetBool("Dash", false);
+                currDmg = 0;
             }
             if (stateInfo.IsName("Phase") && stateInfo.normalizedTime >= 1.0f && isAttacking)
             {
@@ -94,6 +106,7 @@ public class PlayerAttackScript : MonoBehaviour
                 isAttacking = false;
                 anim.SetBool("Ult", false);
                 isUlting = false;
+                currDmg = 0;
             }
         }
     }
