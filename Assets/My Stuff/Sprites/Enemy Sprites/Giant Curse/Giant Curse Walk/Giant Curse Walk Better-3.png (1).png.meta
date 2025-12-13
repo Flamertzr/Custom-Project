@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e3db14c69c8a0a0418684eb7e9f25afb
+guid: 4ab38f2dac35f9e45aa54cb88d34c744
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1242768300980669524
-    second: Giant Curse-1.png_0
+      213: 706028661989562175
+    second: Giant Curse Walk Better-3.png (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,24 +96,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Giant Curse-1.png_0
+      name: Giant Curse Walk Better-3.png (1)_0
       rect:
         serializedVersion: 2
         x: 143
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ca37ee190dcc0cee0800000000000000
-      internalID: -1242768300980669524
+      spriteID: f37d12fc3515cc900800000000000000
+      internalID: 706028661989562175
       vertices: []
       indices: 
       edges: []
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Giant Curse-1.png_0: -1242768300980669524
+      Giant Curse Walk Better-3.png (1)_0: 706028661989562175
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

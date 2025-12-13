@@ -4,6 +4,7 @@ public class followScript : MonoBehaviour
 {
     [SerializeField] public float speed;
     public GameObject player;
+    private Animator anim;
 
 
     private float distance;
@@ -15,6 +16,7 @@ public class followScript : MonoBehaviour
     {
         originalScale = transform.localScale;
         hurtScript = GetComponent<enemyHurtScript>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -23,6 +25,7 @@ public class followScript : MonoBehaviour
         if (hurtScript.dead == false)
         {
             Vector2 direction = player.transform.position - transform.position;
+            anim.SetBool("Walk", true);
 
             if (direction.x > 0f)
             {
@@ -34,7 +37,9 @@ public class followScript : MonoBehaviour
             distance = Vector2.Distance(transform.position, player.transform.position);
             Vector2 targetPos = new Vector2(player.transform.position.x, transform.position.y);
             transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
-        }
+        } else{
+            anim.SetBool("Walk", false);
+        } 
         
     }
 }
