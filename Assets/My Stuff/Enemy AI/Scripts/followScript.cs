@@ -7,7 +7,9 @@ public class followScript : MonoBehaviour
     private Animator anim;
 
 
-    private float distance;
+    public float distance;
+    public float targetPos;
+    
     private enemyHurtScript hurtScript;
 
     private Vector3 originalScale;
