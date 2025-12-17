@@ -15,7 +15,8 @@ GameObject:
   - component: {fileID: 6164718505602134850}
   - component: {fileID: 677570410760877073}
   - component: {fileID: 8125928441005951355}
-  - component: {fileID: 7713949952082374562}
+  - component: {fileID: 95283674467632778}
+  - component: {fileID: 3286582765792149106}
   m_Layer: 11
   m_Name: Giant Curse
   m_TagString: Untagged
@@ -224,7 +225,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7713949952082374562
+--- !u!114 &95283674467632778
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -237,6 +238,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::enemyAttackScript
   biteDmg: 10
+--- !u!114 &3286582765792149106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6672727093118663155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 887c4d97302da764981c0cf26bd854fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::enemyGeneralScript
+  damage: 0
 --- !u!1 &8940588972049715191
 GameObject:
   m_ObjectHideFlags: 0

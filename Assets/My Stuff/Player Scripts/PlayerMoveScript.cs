@@ -11,6 +11,7 @@ public class PlayerMoveScript : MonoBehaviour
     private BoxCollider2D boxCollider;
     private float horizontalInput;
     private PlayerAttackScript playerAttack;
+    private playerHurtScript playerHealth;
     private float normGrav;
     private bool facingRight;
     private int jumps;
@@ -22,6 +23,7 @@ public class PlayerMoveScript : MonoBehaviour
         anim = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
         playerAttack = GetComponent<PlayerAttackScript>();
+        playerHealth = GetComponent<playerHurtScript>();
 
         normGrav = body.gravityScale;
     }
@@ -29,72 +31,74 @@ public class PlayerMoveScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        horizontalInput = Input.GetAxis("Horizontal");
-        
-        if (horizontalInput > 0.01f && !playerAttack.isAttacking)
+        if (playerHealth.currHealth > 0)   
         {
-            facingRight = true;
-            anim.SetBool("Run", true);
-            transform.localScale = new Vector3(2, 2, 2);
-            body.linearVelocity = new Vector2(Input.GetAxis("Horizontal") * speed, body.linearVelocity.y);
-
-
-        } else if (horizontalInput < -0.01f && !playerAttack.isAttacking)
-        {
-            facingRight = false;
-            anim.SetBool("Run", true);
-            transform.localScale = new Vector3(-2, 2, 2);
-            body.linearVelocity = new Vector2(Input.GetAxis("Horizontal") * speed, body.linearVelocity.y);
-
-        } else
-        {
-            anim.SetBool("Run", false);
-        }
-
-        if (((Input.GetKeyDown(KeyCode.Space)) || (Input.GetKeyDown(KeyCode.UpArrow)))&& !playerAttack.isDashing)
-        {
-            Jump();
-        }
-        if(!isGrounded())
-        {
-            anim.SetBool("Jump", true);
-        } else
-        {
-            anim.SetBool("Jump", false);
-            jumps = 0;
-        }
-
-        if(playerAttack.isDashing)
-        {
-            body.gravityScale = 0f;
-            body.linearVelocity = Vector2.zero;
-            if (facingRight)
+            horizontalInput = Input.GetAxis("Horizontal");
+            
+            if (horizontalInput > 0.01f && !playerAttack.isAttacking)
             {
-                body.linearVelocity = new Vector2(50, 0);
+                facingRight = true;
+                anim.SetBool("Run", true);
+                transform.localScale = new Vector3(2, 2, 2);
+                body.linearVelocity = new Vector2(Input.GetAxis("Horizontal") * speed, body.linearVelocity.y);
+
+
+            } else if (horizontalInput < -0.01f && !playerAttack.isAttacking)
+            {
+                facingRight = false;
+                anim.SetBool("Run", true);
+                transform.localScale = new Vector3(-2, 2, 2);
+                body.linearVelocity = new Vector2(Input.GetAxis("Horizontal") * speed, body.linearVelocity.y);
+
+            } else
+            {
+                anim.SetBool("Run", false);
+            }
+
+            if (((Input.GetKeyDown(KeyCode.Space)) || (Input.GetKeyDown(KeyCode.UpArrow)))&& !playerAttack.isDashing)
+            {
+                Jump();
+            }
+            if(!isGrounded())
+            {
+                anim.SetBool("Jump", true);
+            } else
+            {
+                anim.SetBool("Jump", false);
+                jumps = 0;
+            }
+
+            if(playerAttack.isDashing)
+            {
+                body.gravityScale = 0f;
+                body.linearVelocity = Vector2.zero;
+                if (facingRight)
+                {
+                    body.linearVelocity = new Vector2(50, 0);
+                } else 
+                {
+                    body.linearVelocity = new Vector2(-50, 0);
+                }
             } else 
             {
-                body.linearVelocity = new Vector2(-50, 0);
+                body.gravityScale = normGrav;
             }
-        } else 
-        {
-            body.gravityScale = normGrav;
-        }
 
-        if (playerAttack.isPhasing)
-        {
-            body.gravityScale = 0f;
-            body.linearVelocity = Vector2.zero;
-            if (facingRight)
+            if (playerAttack.isPhasing)
             {
-                body.linearVelocity = new Vector2(-30, 0);
+                body.gravityScale = 0f;
+                body.linearVelocity = Vector2.zero;
+                if (facingRight)
+                {
+                    body.linearVelocity = new Vector2(-30, 0);
+                } else 
+                {
+                    body.linearVelocity = new Vector2(30, 0);
+                }
             } else 
             {
-                body.linearVelocity = new Vector2(30, 0);
+                body.gravityScale = normGrav;
             }
-        } else 
-        {
-            body.gravityScale = normGrav;
         }
         
     }

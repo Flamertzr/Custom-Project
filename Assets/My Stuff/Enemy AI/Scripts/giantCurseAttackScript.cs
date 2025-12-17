@@ -6,7 +6,6 @@ public class enemyAttackScript : MonoBehaviour
     private Animator anim;
     private followScript follow;
 
-    private bool biting = false;
     public int biteDmg = 10;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -32,7 +31,6 @@ public class enemyAttackScript : MonoBehaviour
 
     if (stateInfo.IsName("Bite") && stateInfo.normalizedTime >= 1.0f)
         {
-            biting = false;
             anim.SetBool("Bite", false);
         }
     }
