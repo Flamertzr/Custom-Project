@@ -39,18 +39,10 @@ public class enemyHurtScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        AnimatorStateInfo stateInfo = anim.GetCurrentAnimatorStateInfo(0);
         iframes -= Time.deltaTime;
         if (health <=0)
         {
-            dead = true;
-            anim.SetBool("Dead", true);
-            boxCollider.enabled = false;
-            body.simulated = false;
-            if (stateInfo.IsName("Death Animation") && stateInfo.normalizedTime >= 1.0f )
-            {
-                Destroy(gameObject);
-            }
+            death();
         }
     }
 
@@ -75,5 +67,19 @@ public class enemyHurtScript : MonoBehaviour
         sprite.color = originalColor;
         yield return new WaitForSeconds(iframesDuration - 0.2f);
         flashing = false;
+    }
+
+    private void death()
+    {
+        AnimatorStateInfo stateInfo = anim.GetCurrentAnimatorStateInfo(0);
+        
+        dead = true;
+        anim.SetBool("Dead", true);
+        boxCollider.enabled = false;
+        body.simulated = false;
+        if (stateInfo.IsName("Death Animation") && stateInfo.normalizedTime >= 1.0f )
+        {
+            Destroy(gameObject);
+        }
     }
 }

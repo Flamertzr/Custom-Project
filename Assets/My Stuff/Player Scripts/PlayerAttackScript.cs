@@ -11,19 +11,19 @@ public class PlayerAttackScript : MonoBehaviour
     public bool isPhasing = false;
     public bool isUlting = false;
 
-    public static float slashCooldown = 1.5f;
-    public static float dashCooldown = 5f;
-    public static float phaseCooldown = 10f;
-    public static float ultCooldown = 85f;
+    private static float slashCooldown = 1.5f;
+    private static float dashCooldown = 5f;
+    private static float phaseCooldown = 10f;
+    private static float ultCooldown = 85f;
 
-    public static float slashTimer = 0;
-    public static float dashTimer = 0;
-    public static float phaseTimer = 0;
-    public static float ultTimer = 0;
+    private static float slashTimer = 0;
+    private static float dashTimer = 0;
+    private static float phaseTimer = 0;
+    private static float ultTimer = 0;
 
-    public static int slashDmg = 10;
-    public static int dashDmg = 15;
-    public static int ultDmg = 100;
+    private static int slashDmg = 10;
+    private static int dashDmg = 15;
+    private static int ultDmg = 100;
 
 
     public int currDmg = 0;
@@ -34,8 +34,6 @@ public class PlayerAttackScript : MonoBehaviour
         boxCollider = GetComponent<BoxCollider2D>();
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-
-        //abilityTimer -= Time.deltaTime;
     }
 
     // Update is called once per frame
@@ -46,112 +44,73 @@ public class PlayerAttackScript : MonoBehaviour
         phaseTimer -= Time.deltaTime;
         ultTimer -= Time.deltaTime;
 
-        if (Input.GetKeyDown(KeyCode.Z) && !isAttacking && slash())
-        {
-            anim.SetBool("Down Slash", true);
-            isAttacking = true;
-            currDmg = slashDmg;
-        }
+        attack();
+    }
 
-        if (Input.GetKeyDown(KeyCode.X) && !isAttacking && dash())
+    private void attack()
+    {
+        if (Input.GetKeyDown(KeyCode.Z) && !isAttacking && slashTimer <= 0)
         {
-            anim.SetBool("Dash", true);
-            isAttacking = true;
-            isDashing = true;
-            currDmg = dashDmg;
-        }
-
-        if (Input.GetKeyDown(KeyCode.C) && !isAttacking && phase())
+            slashMechanics();
+        } else if(Input.GetKeyDown(KeyCode.X) && !isAttacking && dashTimer <= 0)
         {
-            anim.SetBool("Phase", true);
-            isAttacking = true;
-            isPhasing = true;
-            boxCollider.enabled = false;
-        }
-
-        if (Input.GetKeyDown(KeyCode.G) && !isAttacking && ult())
+            dashMechanics();
+        } else if (Input.GetKeyDown(KeyCode.C) && !isAttacking && phaseTimer <= 0)
         {
-            //anim.SetBool("G Pressed", true);
-            //isAttacking = true;
-            //isUlting = true;
-            //currDmg = ultDmg;
-        }
-
-        if (isAttacking)
+            phaseMechanics();
+        } else if (Input.GetKeyDown(KeyCode.G) && !isAttacking && ultTimer <= 0)
+        {
+            ultMechanics();
+        } else if (isAttacking)
         {
             AnimatorStateInfo stateInfo = anim.GetCurrentAnimatorStateInfo(0);
-
-            if (stateInfo.IsName("Down Slash") && stateInfo.normalizedTime >= 1.0f && isAttacking)
-            {
-                isAttacking = false;
-                anim.SetBool("Down Slash", false);
-                currDmg = 0;
-            }
-            if (stateInfo.IsName("Dash") && stateInfo.normalizedTime >= 1.0f && isAttacking)
+            if (stateInfo.normalizedTime >= 1.0f)
             {
                 isAttacking = false;
                 isDashing = false;
-                anim.SetBool("Dash", false);
-                currDmg = 0;
-            }
-            if (stateInfo.IsName("Phase") && stateInfo.normalizedTime >= 1.0f && isAttacking)
-            {
-                isAttacking = false;
-                anim.SetBool("Phase", false);
                 isPhasing = false;
-                boxCollider.enabled = true;
-            }
-            if (stateInfo.IsName("Ult") && stateInfo.normalizedTime >= 1.0f && isAttacking)
-            {
-                isAttacking = false;
-                anim.SetBool("Ult", false);
                 isUlting = false;
+                anim.SetBool("Down Slash", false);
+                anim.SetBool("Dash", false);
+                anim.SetBool("Phase", false);
+                anim.SetBool("Ult", false);
+                boxCollider.enabled = true;
                 currDmg = 0;
             }
         }
     }
-
-    private static bool slash()
+    
+    private void slashMechanics()
     {
-        if (slashTimer > 0f)
-        {
-            return false;
-        }
-
+        anim.SetBool("Down Slash", true);
+        isAttacking = true;
+        currDmg = slashDmg;
         slashTimer = slashCooldown;
-        return true;
     }
 
-    private static bool dash()
+    private void dashMechanics()
     {
-        if (dashTimer > 0f)
-        {
-            return false;
-        }
-
+        anim.SetBool("Dash", true);
+        isAttacking = true;
+        isDashing = true;
+        currDmg = dashDmg;
         dashTimer = dashCooldown;
-        return true;
     }
-
-    private static bool phase()
+    private void phaseMechanics()
     {
-        if (phaseTimer > 0f)
-        {
-            return false;
-        }
-
+        anim.SetBool("Phase", true);
+        isAttacking = true;
+        isPhasing = true;
+        boxCollider.enabled = false;
         phaseTimer = phaseCooldown;
-        return true;
     }
 
-    private static bool ult()
+    private void ultMechanics()
     {
-        if (ultTimer > 0f)
-        {
-            return false;
-        }
-
-        ultTimer = ultCooldown;
-        return true;
+        //anim.SetBool("G Pressed", true);
+        //isAttacking = true;
+        //isUlting = true;
+        //currDmg = ultDmg;
+        //ultTimer = ultCooldown;
     }
 }

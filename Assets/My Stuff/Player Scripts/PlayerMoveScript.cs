@@ -6,7 +6,7 @@ public class PlayerMoveScript : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float jumpPower;
 
-    public Rigidbody2D body;
+    private Rigidbody2D body;
     private Animator anim;
     private BoxCollider2D boxCollider;
     private float horizontalInput;
@@ -30,6 +30,34 @@ public class PlayerMoveScript : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+    {
+        movement();
+    }
+        
+    private void Jump()
+    {
+        if (isGrounded())
+        {
+            body.linearVelocity = Vector2.up * jumpPower;
+        } else if (jumps < 1)
+        {
+            body.linearVelocity = Vector2.up * jumpPower;
+            jumps += 1;
+        }
+    }
+
+    private bool isGrounded()
+    {
+        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer);
+        return raycastHit.collider != null;
+    }
+
+    private bool canAttack()
+    {
+        return horizontalInput == 0 && isGrounded();
+    }
+
+    private void movement()
     {
         if (playerHealth.currHealth > 0)   
         {
@@ -100,29 +128,5 @@ public class PlayerMoveScript : MonoBehaviour
                 body.gravityScale = normGrav;
             }
         }
-        
-    }
-        
-    private void Jump()
-    {
-        if (isGrounded())
-        {
-            body.linearVelocity = Vector2.up * jumpPower;
-        } else if (jumps < 1)
-        {
-            body.linearVelocity = Vector2.up * jumpPower;
-            jumps += 1;
-        }
-    }
-
-    private bool isGrounded()
-    {
-        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer);
-        return raycastHit.collider != null;
-    }
-
-    public bool canAttack()
-    {
-        return horizontalInput == 0 && isGrounded();
     }
 }

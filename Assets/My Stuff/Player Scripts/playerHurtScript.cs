@@ -46,17 +46,8 @@ public class playerHurtScript : MonoBehaviour
     {
         AnimatorStateInfo stateInfo = anim.GetCurrentAnimatorStateInfo(0);
         iframes -= Time.deltaTime;
-        if (currHealth <=0)
-        {
-            dead = true;
-            anim.SetBool("Dead", true);
-            boxCollider.enabled = false;
-            body.simulated = false;
-            if (stateInfo.IsName("Death Animation") && stateInfo.normalizedTime >= 1.0f )
-            {
-                SceneManager.LoadScene("Death Screen");
-            }
-        }
+
+        death();
     }
 
     void OnTriggerStay2D(Collider2D other)
@@ -82,5 +73,21 @@ public class playerHurtScript : MonoBehaviour
         sprite.color = originalColor;
         yield return new WaitForSeconds(iframesDuration - 0.2f);
         flashing = false;
+    }
+
+    private void death()
+    {
+        AnimatorStateInfo stateInfo = anim.GetCurrentAnimatorStateInfo(0);
+        if (currHealth <=0)
+            {
+                dead = true;
+                anim.SetBool("Dead", true);
+                boxCollider.enabled = false;
+                body.simulated = false;
+                if (dead && stateInfo.normalizedTime >= 1.0f )
+                {
+                    SceneManager.LoadScene("Death Screen");
+                }
+        }  
     }
 }
