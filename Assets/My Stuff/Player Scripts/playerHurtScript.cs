@@ -47,7 +47,10 @@ public class playerHurtScript : MonoBehaviour
         AnimatorStateInfo stateInfo = anim.GetCurrentAnimatorStateInfo(0);
         iframes -= Time.deltaTime;
 
-        death();
+        if (currHealth <= 0)
+        {
+            death();
+        }
     }
 
     void OnTriggerStay2D(Collider2D other)
@@ -77,17 +80,24 @@ public class playerHurtScript : MonoBehaviour
 
     private void death()
     {
-        AnimatorStateInfo stateInfo = anim.GetCurrentAnimatorStateInfo(0);
-        if (currHealth <=0)
+        
+
+        foreach (AnimatorControllerParameter param in anim.parameters)
+        {
+            if (param.type == AnimatorControllerParameterType.Bool)
             {
-                dead = true;
-                anim.SetBool("Dead", true);
-                boxCollider.enabled = false;
-                body.simulated = false;
-                if (dead && stateInfo.normalizedTime >= 1.0f )
-                {
-                    SceneManager.LoadScene("Death Screen");
-                }
-        }  
+                anim.SetBool(param.name, false);
+            }
+        }
+
+            dead = true;
+            anim.SetBool("Dead", true);
+            boxCollider.enabled = false;
+            body.simulated = false;
+            AnimatorStateInfo stateInfo = anim.GetCurrentAnimatorStateInfo(0);
+            if (dead && stateInfo.normalizedTime >= 1.0f )
+            {
+                SceneManager.LoadScene("Death Screen");
+            } 
     }
 }

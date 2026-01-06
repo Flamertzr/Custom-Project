@@ -5,6 +5,7 @@ public class enemyAttackScript : MonoBehaviour
     private float close;
     private Animator anim;
     private followScript follow;
+    private enemyHurtScript HurtScript;
 
     private static float biteCooldown = 1f;
     private static float biteTimer = 0;
@@ -15,29 +16,31 @@ public class enemyAttackScript : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         follow = GetComponent<followScript>();
+        HurtScript = GetComponent<enemyHurtScript>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        AnimatorStateInfo stateInfo = anim.GetCurrentAnimatorStateInfo(0);
+
         close = follow.distance - follow.targetPos;
         biteTimer -= biteCooldown;
-        attack();
+
+        if (biteTimer <= 0 && close <= 40 && HurtScript.iframes < 0)
+        { 
+            attack();
+        }
+
+        if (close > 40 )
+        {
+            anim.SetBool("Bite", false);
+        }
 
     }
 
     public void attack()
     {
-        AnimatorStateInfo stateInfo = anim.GetCurrentAnimatorStateInfo(0);
-
-        if (biteTimer <= 0 && close <= 40)
-        { 
-            anim.SetBool("Bite", true);
-        }
-
-        if (stateInfo.IsName("Bite") && stateInfo.normalizedTime >= 1.0f)
-        {
-            anim.SetBool("Bite", false);
-        }
+        anim.SetBool("Bite", true);
     }
 }
