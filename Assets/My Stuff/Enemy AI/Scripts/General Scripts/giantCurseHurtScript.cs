@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class enemyHurtScript : MonoBehaviour
+public class giantCurseHurtScript : MonoBehaviour
 {
     [SerializeField] public float iframes;
     [SerializeField] public float iframesDuration;
@@ -16,6 +16,7 @@ public class enemyHurtScript : MonoBehaviour
     private Color originalColor;
     private GameObject player;
     private PlayerAttackScript playerAttack;
+    private giantCurseAttackScript giantCurseAttack;
     private Animator anim;
     
 
@@ -32,6 +33,7 @@ public class enemyHurtScript : MonoBehaviour
         player = GameObject.Find("Player");
         enemy = gameObject;
         playerAttack = player.GetComponent<PlayerAttackScript>();
+        giantCurseAttack = GetComponent<giantCurseAttackScript>();
         originalColor = sprite.color;
         anim = GetComponent<Animator>();
     }
@@ -51,6 +53,7 @@ public class enemyHurtScript : MonoBehaviour
         if (other.CompareTag("Player Hitbox") && iframes < -iframesDuration)
         {
             iframes = iframesDuration;
+            giantCurseAttack.hurtTimer = giantCurseAttack.flinchDuration;
             health -= playerAttack.currDmg;
             if (flashing == false)
             {

@@ -10,14 +10,14 @@ public class followScript : MonoBehaviour
     public float distance;
     public float targetPos;
     
-    private enemyHurtScript hurtScript;
+    private giantCurseHurtScript hurtScript;
 
     private Vector3 originalScale;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         originalScale = transform.localScale;
-        hurtScript = GetComponent<enemyHurtScript>();
+        hurtScript = GetComponent<giantCurseHurtScript>();
         anim = GetComponent<Animator>();
     }
 

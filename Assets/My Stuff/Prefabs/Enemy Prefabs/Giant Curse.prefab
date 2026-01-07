@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8125928441005951355}
   - component: {fileID: 95283674467632778}
   - component: {fileID: 3286582765792149106}
-  - component: {fileID: 6263300257472713235}
+  - component: {fileID: 6353358179244620149}
   m_Layer: 11
   m_Name: Giant Curse
   m_TagString: Untagged
@@ -221,6 +221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd9ef40d45026f4e968057cff5d09e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::enemyAttackScript
+  flinchDuration: 0
   biteDmg: 10
 --- !u!114 &3286582765792149106
 MonoBehaviour:
@@ -236,7 +237,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::enemyGeneralScript
   dmg: 0
   damage: 0
---- !u!114 &6263300257472713235
+--- !u!114 &6353358179244620149
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -245,9 +246,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6672727093118663155}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64f7193ed295e8441ae86e7f008f27b8, type: 3}
+  m_Script: {fileID: 11500000, guid: e7b8471e639aed64ab27c13370e38d66, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::enemyHurtScript
+  m_EditorClassIdentifier: Assembly-CSharp::giantCurseHurtScript
   iframes: 0
   iframesDuration: 0.8
   health: 100
