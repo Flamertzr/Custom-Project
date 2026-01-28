@@ -31,20 +31,18 @@ public class giantCurseAttackScript : MonoBehaviour
         close = follow.distance - follow.targetPos;
         biteTimer -= biteCooldown;
 
-        if (biteTimer <= 0 && close <= 40 && hurtTimer < 0)
-        {
-            attack();
-        }
-
-        if (close > 40 )
+        if (close > 40  )
         {
             anim.SetBool("Bite", false);
         }
 
     }
 
-    public void attack()
+    void OnTriggerStay2D(Collider2D other)
     {
-        anim.SetBool("Bite", true);
+        if (biteTimer <= 0 && close <= 40 && hurtTimer < 0 && other.CompareTag("Player"))
+        {
+            anim.SetBool("Bite", true);
+        }
     }
 }
