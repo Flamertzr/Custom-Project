@@ -147,6 +147,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1751810769}
+    - target: {fileID: 6353358179244620149, guid: be74cef8a9a30dd47a3f1778d9651720, type: 3}
+      propertyPath: flinchDuration
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 6672727093118663155, guid: be74cef8a9a30dd47a3f1778d9651720, type: 3}
       propertyPath: m_Name
       value: Giant Curse
@@ -1022,11 +1026,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5498757321225850857, guid: f97f7004a206daa4bb610eb44067e2c4, type: 3}
       propertyPath: m_LocalScale.x
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5498757321225850857, guid: f97f7004a206daa4bb610eb44067e2c4, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5498757321225850857, guid: f97f7004a206daa4bb610eb44067e2c4, type: 3}
       propertyPath: m_LocalScale.z
@@ -1034,11 +1038,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5498757321225850857, guid: f97f7004a206daa4bb610eb44067e2c4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.2
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 5498757321225850857, guid: f97f7004a206daa4bb610eb44067e2c4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 17.6
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5498757321225850857, guid: f97f7004a206daa4bb610eb44067e2c4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1075,6 +1079,14 @@ PrefabInstance:
     - target: {fileID: 7032713804656660641, guid: f97f7004a206daa4bb610eb44067e2c4, type: 3}
       propertyPath: m_Sprite
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7032713804656660641, guid: f97f7004a206daa4bb610eb44067e2c4, type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7032713804656660641, guid: f97f7004a206daa4bb610eb44067e2c4, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -975053907
       objectReference: {fileID: 0}
     - target: {fileID: 7032713804656660641, guid: f97f7004a206daa4bb610eb44067e2c4, type: 3}
       propertyPath: m_WasSpriteAssigned

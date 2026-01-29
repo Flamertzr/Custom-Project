@@ -7,6 +7,7 @@ public class giantCurseAttackScript : MonoBehaviour
     private Animator anim;
     private followScript follow;
     private giantCurseHurtScript HurtScript;
+    
 
     private static float biteCooldown = 1f;
     private static float biteTimer = 0;
@@ -34,15 +35,18 @@ public class giantCurseAttackScript : MonoBehaviour
         if (close > 40  )
         {
             anim.SetBool("Bite", false);
+        } else 
+        {
+            if (biteTimer <= 0 && close <= 40 && hurtTimer < 0)
+        {
+            anim.SetBool("Bite", true);
+        }
         }
 
     }
 
     void OnTriggerStay2D(Collider2D other)
     {
-        if (biteTimer <= 0 && close <= 40 && hurtTimer < 0 && other.CompareTag("Player"))
-        {
-            anim.SetBool("Bite", true);
-        }
+        
     }
 }

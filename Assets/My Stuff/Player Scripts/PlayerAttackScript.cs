@@ -2,9 +2,14 @@ using UnityEngine;
 
 public class PlayerAttackScript : MonoBehaviour
 {
+    [SerializeField] public GameObject Ult;
+
     public Rigidbody2D body;
     private Animator anim;
+    private Animator ultAnim;
     private BoxCollider2D boxCollider;
+    private GameObject ult;
+    private SpriteRenderer ultSprite;
 
     public bool isAttacking = false;
     public bool isDashing = false;
@@ -14,7 +19,7 @@ public class PlayerAttackScript : MonoBehaviour
     private static float slashCooldown = 1.5f;
     private static float dashCooldown = 5f;
     private static float phaseCooldown = 10f;
-    private static float ultCooldown = 85f;
+    private static float ultCooldown = 60f;
 
     private static float slashTimer = 0;
     private static float dashTimer = 0;
@@ -34,6 +39,9 @@ public class PlayerAttackScript : MonoBehaviour
         boxCollider = GetComponent<BoxCollider2D>();
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        ult = transform.Find("Player Ult").gameObject;
+        ultAnim = ult.GetComponent<Animator>();
+        ultSprite = ult.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -64,7 +72,8 @@ public class PlayerAttackScript : MonoBehaviour
         } else if (isAttacking)
         {
             AnimatorStateInfo stateInfo = anim.GetCurrentAnimatorStateInfo(0);
-            if (stateInfo.normalizedTime >= 1.0f)
+            AnimatorStateInfo stateInfo1 = ultAnim.GetCurrentAnimatorStateInfo(0);
+            if (stateInfo.normalizedTime >= 1.0f && stateInfo1.normalizedTime >= 1.0f)
             {
                 isAttacking = false;
                 isDashing = false;
@@ -73,7 +82,9 @@ public class PlayerAttackScript : MonoBehaviour
                 anim.SetBool("Down Slash", false);
                 anim.SetBool("Dash", false);
                 anim.SetBool("Phase", false);
-                anim.SetBool("Ult", false);
+                ultAnim.SetBool("Ult", false);
+                ultAnim.enabled = false;
+                ultSprite.sprite = null;
                 boxCollider.enabled = true;
                 currDmg = 0;
             }
@@ -107,10 +118,12 @@ public class PlayerAttackScript : MonoBehaviour
 
     private void ultMechanics()
     {
-        //anim.SetBool("G Pressed", true);
-        //isAttacking = true;
-        //isUlting = true;
-        //currDmg = ultDmg;
-        //ultTimer = ultCooldown;
+        ultAnim.Play("Ult", 0, 0f);
+        ultAnim.enabled = true;
+        ultAnim.SetBool("Ult", true);
+        isAttacking = true;
+        isUlting = true;
+        currDmg = ultDmg;
+        ultTimer = ultCooldown;
     }
 }

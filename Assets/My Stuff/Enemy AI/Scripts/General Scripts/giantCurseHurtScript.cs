@@ -5,6 +5,7 @@ public class giantCurseHurtScript : MonoBehaviour
     [SerializeField] public float iframes;
     [SerializeField] public float iframesDuration;
     [SerializeField] public int health = 100;
+    [SerializeField] public float flinchDuration;
 
     public bool dead = false;
     private bool flashing = false;
@@ -52,6 +53,7 @@ public class giantCurseHurtScript : MonoBehaviour
     {
         if (other.CompareTag("Player Hitbox") && iframes < -iframesDuration)
         {
+            StartCoroutine(flinch());
             iframes = iframesDuration;
             giantCurseAttack.hurtTimer = giantCurseAttack.flinchDuration;
             health -= playerAttack.currDmg;
@@ -84,5 +86,11 @@ public class giantCurseHurtScript : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    private System.Collections.IEnumerator flinch()
+    {      
+        anim.SetBool("Bite", false); 
+        yield return new WaitForSeconds(flinchDuration);
     }
 }
