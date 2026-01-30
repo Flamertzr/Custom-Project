@@ -12,11 +12,14 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/My Stuff/Scenes/Road Scene.unity
+    path: Assets/My Stuff/Scenes/Level 1.unity
     guid: 71920b47fd192e345bb4349f8c234b81
   - enabled: 1
     path: Assets/My Stuff/Scenes/Death Screen.unity
     guid: e495e55039ab14242a9ff3c9a39f4f6f
+  - enabled: 1
+    path: Assets/My Stuff/Scenes/Levels.unity
+    guid: cafa0d4f6a50a3542b6bec710e26e5f2
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

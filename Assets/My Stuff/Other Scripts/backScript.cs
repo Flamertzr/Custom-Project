@@ -2,15 +2,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-
-
-public class mainMenuScript : MonoBehaviour
+public class backScript : MonoBehaviour
 {
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -19,8 +16,8 @@ public class mainMenuScript : MonoBehaviour
         
     }
 
-    public void startGame()
+     public void back()
     {
-        SceneManager.LoadScene("Levels");
+        SceneManager.LoadScene("Main Menu");
     }
 }
