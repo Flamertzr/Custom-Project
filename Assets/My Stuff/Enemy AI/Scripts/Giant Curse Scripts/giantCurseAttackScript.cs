@@ -44,9 +44,4 @@ public class giantCurseAttackScript : MonoBehaviour
         }
 
     }
-
-    void OnTriggerStay2D(Collider2D other)
-    {
-        
-    }
 }
