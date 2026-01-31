@@ -5,7 +5,7 @@ public class smallCurseAttackScript : MonoBehaviour
     [SerializeField] public float flinchDuration;
     private float close;
     private Animator anim;
-    private followScript follow;
+    private smallCurseFollowScript follow;
     private smallCurseHurtScript HurtScript;
     
 
@@ -19,7 +19,7 @@ public class smallCurseAttackScript : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
-        follow = GetComponent<followScript>();
+        follow = GetComponent<smallCurseFollowScript>();
         HurtScript = GetComponent<smallCurseHurtScript>();
     }
 
@@ -34,12 +34,12 @@ public class smallCurseAttackScript : MonoBehaviour
 
         if (close > 40  )
         {
-            anim.SetBool("Bite", false);
+            anim.SetBool("Attack", false);
         } else 
         {
             if (attkTimer <= 0 && close <= 40 && hurtTimer < 0)
         {
-            anim.SetBool("Bite", true);
+            anim.SetBool("Attack", true);
         }
         }
 

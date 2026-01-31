@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: 1ef95939031d4384ebfee34955a4bd6b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3132212331832149204
+    second: Small Curse Death-10.png_0
+  - first:
+      213: -146519675404565993
+    second: Small Curse Death-10.png_1
+  - first:
+      213: 4772351490170663502
+    second: Small Curse Death-10.png_2
+  - first:
+      213: 4024303441006021903
+    second: Small Curse Death-10.png_3
+  - first:
+      213: 7602066308921028012
+    second: Small Curse Death-10.png_4
+  - first:
+      213: 1400579309710554837
+    second: Small Curse Death-10.png_5
+  - first:
+      213: -3958437141054751228
+    second: Small Curse Death-10.png_6
+  - first:
+      213: 5203390226248527873
+    second: Small Curse Death-10.png_7
+  - first:
+      213: -4008446631066934150
+    second: Small Curse Death-10.png_8
+  - first:
+      213: -6958701711935146416
+    second: Small Curse Death-10.png_9
+  - first:
+      213: -2302926135781154183
+    second: Small Curse Death-10.png_10
+  - first:
+      213: -3880754908834946321
+    second: Small Curse Death-10.png_11
+  - first:
+      213: -6997030837316351818
+    second: Small Curse Death-10.png_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Small Curse Death-10.png_0
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 735
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2bfb08ba752884d0800000000000000
+      internalID: -3132212331832149204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Curse Death-10.png_1
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 767
+        width: 50
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 712c7eaa12577fdf0800000000000000
+      internalID: -146519675404565993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Curse Death-10.png_2
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 751
+        width: 50
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e42bde2356cca3240800000000000000
+      internalID: 4772351490170663502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Curse Death-10.png_3
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 687
+        width: 146
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0dcb8d68a239d730800000000000000
+      internalID: 4024303441006021903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Curse Death-10.png_4
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 671
+        width: 194
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cade33ec707ff7960800000000000000
+      internalID: 7602066308921028012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Curse Death-10.png_5
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 559
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d63f0b267bdf6310800000000000000
+      internalID: 1400579309710554837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Curse Death-10.png_6
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 623
+        width: 194
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40ef7b5946ec019c0800000000000000
+      internalID: -3958437141054751228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Curse Death-10.png_7
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 575
+        width: 82
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 100784f87d7263840800000000000000
+      internalID: 5203390226248527873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Curse Death-10.png_8
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 415
+        width: 162
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a74e426d6032f58c0800000000000000
+      internalID: -4008446631066934150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Curse Death-10.png_9
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 287
+        width: 66
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 056f33a69a9bd6f90800000000000000
+      internalID: -6958701711935146416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Curse Death-10.png_10
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 367
+        width: 130
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9722dc481ec5a00e0800000000000000
+      internalID: -2302926135781154183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Curse Death-10.png_11
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 399
+        width: 130
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe22a86b8f9c42ac0800000000000000
+      internalID: -3880754908834946321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Curse Death-10.png_12
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 255
+        width: 210
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b80e4b768d85ee90800000000000000
+      internalID: -6997030837316351818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Small Curse Death-10.png_0: -3132212331832149204
+      Small Curse Death-10.png_1: -146519675404565993
+      Small Curse Death-10.png_10: -2302926135781154183
+      Small Curse Death-10.png_11: -3880754908834946321
+      Small Curse Death-10.png_12: -6997030837316351818
+      Small Curse Death-10.png_2: 4772351490170663502
+      Small Curse Death-10.png_3: 4024303441006021903
+      Small Curse Death-10.png_4: 7602066308921028012
+      Small Curse Death-10.png_5: 1400579309710554837
+      Small Curse Death-10.png_6: -3958437141054751228
+      Small Curse Death-10.png_7: 5203390226248527873
+      Small Curse Death-10.png_8: -4008446631066934150
+      Small Curse Death-10.png_9: -6958701711935146416
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

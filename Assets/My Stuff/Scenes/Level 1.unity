@@ -258,37 +258,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 6.759629, y: 0.613238}
   m_EdgeRadius: 0
---- !u!1 &263071209
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 263071210}
-  m_Layer: 0
-  m_Name: Main Menu Button
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &263071210
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 263071209}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -66.40745, y: -6.52008, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &344514894
 GameObject:
   m_ObjectHideFlags: 0
@@ -982,6 +951,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Curse 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5300403159785492732, guid: a94a89fc4abb27247a51c218acf4f1c3, type: 3}
+      propertyPath: m_Size.x
+      value: 3.2083712
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300403159785492732, guid: a94a89fc4abb27247a51c218acf4f1c3, type: 3}
+      propertyPath: m_Size.y
+      value: 4.310939
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300403159785492732, guid: a94a89fc4abb27247a51c218acf4f1c3, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.025960445
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300403159785492732, guid: a94a89fc4abb27247a51c218acf4f1c3, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.056080937
+      objectReference: {fileID: 0}
     - target: {fileID: 6316287622172718353, guid: a94a89fc4abb27247a51c218acf4f1c3, type: 3}
       propertyPath: m_SortingLayer
       value: 3
@@ -1031,6 +1016,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
+    - {fileID: 0}
     - {fileID: 837107602453170106, guid: a94a89fc4abb27247a51c218acf4f1c3, type: 3}
     - {fileID: -8963576279468248497, guid: a94a89fc4abb27247a51c218acf4f1c3, type: 3}
     m_RemovedGameObjects: []
@@ -1137,7 +1123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb6cb33c20bd69341a20bb56cc8cbfab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::smallCurseFollowScript
-  speed: 20
+  speed: 15
   player: {fileID: 1751810769}
   distance: 0
   targetPos: 0
@@ -1593,5 +1579,4 @@ SceneRoots:
   - {fileID: 344514896}
   - {fileID: 1295460818}
   - {fileID: 1531960881}
-  - {fileID: 263071210}
   - {fileID: 1146874046}
