@@ -11,6 +11,7 @@ public class smallCurseFollowScript : MonoBehaviour
     public float targetPos;
     
     private smallCurseHurtScript hurtScript;
+    private smallCurseAttackScript attkScript;
 
     private Vector3 originalScale;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -18,13 +19,14 @@ public class smallCurseFollowScript : MonoBehaviour
     {
         originalScale = transform.localScale;
         hurtScript = GetComponent<smallCurseHurtScript>();
+        attkScript = GetComponent<smallCurseAttackScript>();
         anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
    void Update()
     {
-        if (hurtScript.dead == false)
+        if (hurtScript.dead == false && attkScript.close >= 40)
         {
             Vector2 direction = player.transform.position - transform.position;
             anim.SetBool("Walk", true);
@@ -41,7 +43,6 @@ public class smallCurseFollowScript : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
         } else{
             anim.SetBool("Walk", false);
-        } 
-        
+        }
     }
 }

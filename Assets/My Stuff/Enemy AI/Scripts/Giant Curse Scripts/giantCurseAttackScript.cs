@@ -29,7 +29,7 @@ public class giantCurseAttackScript : MonoBehaviour
         hurtTimer -= Time.deltaTime;
         AnimatorStateInfo stateInfo = anim.GetCurrentAnimatorStateInfo(0);
 
-        close = follow.distance - follow.targetPos;
+        close = Vector2.Distance(transform.position, follow.player.transform.position);
         biteTimer -= biteCooldown;
 
         if (close > 40  )
