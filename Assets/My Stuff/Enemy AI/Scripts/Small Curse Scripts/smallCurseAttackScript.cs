@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class smallCurseAttackScript : MonoBehaviour
 {
+    [SerializeField] float acidSpeed = 6f;
+    [SerializeField] float acidMoveTime = 0.4f;
+
     [SerializeField] public float flinchDuration;
     private Animator anim;
     private smallCurseFollowScript follow;
@@ -9,6 +12,7 @@ public class smallCurseAttackScript : MonoBehaviour
     private GameObject acid;
     private SpriteRenderer acidSprite;
     private Animator acidAnim;
+    private Rigidbody2D body;
     
 
     private static float cooldown = 3f;
@@ -17,6 +21,8 @@ public class smallCurseAttackScript : MonoBehaviour
     public float hurtTimer;
     public float close;
 
+    private float acidTimer;
+    private bool isAttacking;
     public int dmg = 5;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -27,11 +33,22 @@ public class smallCurseAttackScript : MonoBehaviour
         acid = transform.Find("Acid").gameObject;
         acidAnim = acid.GetComponent<Animator>();
         acidSprite = acid.GetComponent<SpriteRenderer>();
+        body = acid.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (isAttacking)
+        {
+            acidTimer -= Time.deltaTime;
+
+            if (acidTimer <= 0)
+            {
+                body.linearVelocity = Vector2.zero; // stop moving
+                isAttacking = false;
+            }
+        }
         hurtTimer -= Time.deltaTime;
         AnimatorStateInfo stateInfo = anim.GetCurrentAnimatorStateInfo(0);
         AnimatorStateInfo stateInfo1 = acidAnim.GetCurrentAnimatorStateInfo(0);
@@ -48,7 +65,17 @@ public class smallCurseAttackScript : MonoBehaviour
             if (attkTimer <= 0 && close <= 40 && hurtTimer < 0)
         {
             anim.SetBool("Attack", true);
-            acidAnim.SetBool("Attack", false);
+            acidAnim.SetBool("Attack", true);
+
+            isAttacking = true;
+            acidTimer = acidMoveTime;
+
+            body.linearVelocity = new Vector2(-transform.localScale.x * acidSpeed, 0);
+
+            if (stateInfo.normalizedTime >= 1.0f)
+            {
+                acid.transform.localPosition = Vector3.zero;
+            }
         }
         }
 

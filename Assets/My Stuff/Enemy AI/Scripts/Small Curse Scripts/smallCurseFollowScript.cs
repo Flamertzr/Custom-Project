@@ -7,6 +7,7 @@ public class smallCurseFollowScript : MonoBehaviour
     private Animator anim;
 
 
+
     public float distance;
     public float targetPos;
     
@@ -26,7 +27,7 @@ public class smallCurseFollowScript : MonoBehaviour
     // Update is called once per frame
    void Update()
     {
-        if (hurtScript.dead == false && attkScript.close >= 40)
+        if (hurtScript.dead == false && attkScript.close >= 30)
         {
             Vector2 direction = player.transform.position - transform.position;
             anim.SetBool("Walk", true);

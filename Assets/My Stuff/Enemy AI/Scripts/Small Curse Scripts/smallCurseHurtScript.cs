@@ -19,6 +19,8 @@ public class smallCurseHurtScript : MonoBehaviour
     private PlayerAttackScript playerAttack;
     private smallCurseAttackScript smallCurseAttack;
     private Animator anim;
+    private Animator acidAnim;
+    private GameObject acid;
     
 
     
@@ -37,6 +39,8 @@ public class smallCurseHurtScript : MonoBehaviour
         smallCurseAttack = GetComponent<smallCurseAttackScript>();
         originalColor = sprite.color;
         anim = GetComponent<Animator>();
+        acid = transform.Find("Acid").gameObject;
+        acidAnim = acid.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -80,6 +84,7 @@ public class smallCurseHurtScript : MonoBehaviour
         
         dead = true;
         anim.SetBool("Dead", true);
+        acidAnim.SetBool("Dead", true);
         boxCollider.enabled = false;
         body.simulated = false;
         if (stateInfo.IsName("Death") && stateInfo.normalizedTime >= 1.0f )
