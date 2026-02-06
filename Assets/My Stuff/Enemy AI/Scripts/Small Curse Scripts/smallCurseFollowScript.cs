@@ -32,10 +32,10 @@ public class smallCurseFollowScript : MonoBehaviour
             Vector2 direction = player.transform.position - transform.position;
             anim.SetBool("Walk", true);
 
-            if (direction.x > 0f)
+            if (direction.x > 0f && attkScript.isAttacking)
             {
                 transform.localScale = new Vector3(-Mathf.Abs(originalScale.x), originalScale.y, originalScale.z);
-            } else if (direction.x < 0f) 
+            } else if (direction.x < 0f && attkScript.isAttacking) 
             {
                 transform.localScale = new Vector3(Mathf.Abs(originalScale.x), originalScale.y, originalScale.z);
             }

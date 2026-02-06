@@ -3,7 +3,7 @@ using UnityEngine;
 public class smallCurseAttackScript : MonoBehaviour
 {
     private float acidSpeed = 6f;
-    float acidMoveTime = 2f;
+    float acidMoveTime = 4f;
 
     [SerializeField] public float flinchDuration;
     private Animator anim;
@@ -15,14 +15,14 @@ public class smallCurseAttackScript : MonoBehaviour
     private Rigidbody2D body;
     
 
-    private static float cooldown = 3f;
-    private static float attkTimer;
+    private float cooldown = 3f;
+    private float attkTimer;
 
     public float hurtTimer;
     public float close;
 
     private float acidTimer;
-    private bool isAttacking;
+    public bool isAttacking;
     public int dmg = 5;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -39,41 +39,40 @@ public class smallCurseAttackScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        AnimatorStateInfo stateInfo = acidAnim.GetCurrentAnimatorStateInfo(0);
         close = Vector2.Distance(transform.position, follow.player.transform.position);
 
-        if (close > 40 || hurtTimer > 0)
-            return;
-
-        attkTimer -= Time.deltaTime;
-
-        // START ATTACK
-        if (!isAttacking && attkTimer <= 0)
-        {
-            StartAttack();
-        }
-
-        // MOVE ACID
+        // ALWAYS update projectile if already attacking
         if (isAttacking)
         {
             acidTimer -= Time.deltaTime;
 
             body.linearVelocity = new Vector2(-transform.localScale.x * acidSpeed, 0);
 
-            if (stateInfo.normalizedTime >= 1.0f)
+            if (acidTimer <= 0f)
             {
                 EndAttack();
+            }
+        }
+
+        // ONLY control when a new attack can start
+        if (close <= 40 && hurtTimer <= 0)
+        {
+            attkTimer -= Time.deltaTime;
+
+            if (!isAttacking && attkTimer <= 0)
+            {
+                StartAttack();
             }
         }
     }
 
     void StartAttack()
     {
+        acid.transform.localPosition = Vector3.zero;
         isAttacking = true;
         acidTimer = acidMoveTime;
         attkTimer = cooldown;
 
-        anim.SetBool("Attack", true);
         acidAnim.Play("Acid", 0, 0f);
 
         acidSprite.enabled = true;
