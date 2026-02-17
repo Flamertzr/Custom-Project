@@ -5,7 +5,7 @@ public class giantCurseAttackScript : MonoBehaviour
     [SerializeField] public float flinchDuration;
     private float close;
     private Animator anim;
-    private followScript follow;
+    private giantCurseFollowscript follow;
     private giantCurseHurtScript HurtScript;
     
 
@@ -19,7 +19,7 @@ public class giantCurseAttackScript : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
-        follow = GetComponent<followScript>();
+        follow = GetComponent<giantCurseFollowscript>();
         HurtScript = GetComponent<giantCurseHurtScript>();
     }
 
@@ -32,7 +32,7 @@ public class giantCurseAttackScript : MonoBehaviour
         close = Vector2.Distance(transform.position, follow.player.transform.position);
         biteTimer -= biteCooldown;
 
-        if (close > 40  )
+        if (close > 40)
         {
             anim.SetBool("Bite", false);
         } else 

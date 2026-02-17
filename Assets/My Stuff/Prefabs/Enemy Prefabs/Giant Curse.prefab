@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 7754364780031466703}
   - component: {fileID: 6881756197961764323}
   - component: {fileID: 651092851999532469}
-  - component: {fileID: 6164718505602134850}
   - component: {fileID: 8125928441005951355}
   - component: {fileID: 95283674467632778}
   - component: {fileID: 3286582765792149106}
   - component: {fileID: 6353358179244620149}
+  - component: {fileID: 7529377889861327696}
   m_Layer: 11
   m_Name: Giant Curse
   m_TagString: Untagged
@@ -33,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 6672727093118663155}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.2, y: -40.3, z: 0}
+  m_LocalPosition: {x: 54.4, y: -25.97401, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -171,22 +171,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 6.1577215, y: 3.9488904}
   m_EdgeRadius: 0
---- !u!114 &6164718505602134850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6672727093118663155}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2117ce0a05b1c345bb93bde27b52c55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::followScript
-  speed: 10
-  player: {fileID: 0}
-  distance: 0
-  targetPos: 0
 --- !u!95 &8125928441005951355
 Animator:
   serializedVersion: 7
@@ -222,6 +206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::enemyAttackScript
   flinchDuration: 0
+  hurtTimer: 0
   biteDmg: 10
 --- !u!114 &3286582765792149106
 MonoBehaviour:
@@ -235,8 +220,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 887c4d97302da764981c0cf26bd854fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::enemyGeneralScript
-  dmg: 0
-  damage: 0
+  dmg: 10
+  damage: 10
 --- !u!114 &6353358179244620149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,7 +237,24 @@ MonoBehaviour:
   iframes: 0
   iframesDuration: 0.8
   health: 100
+  flinchDuration: 0
   dead: 0
+--- !u!114 &7529377889861327696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6672727093118663155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd858a2eeea523a43adb52c937af88ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::giantCurseFollowscript
+  speed: 10
+  player: {fileID: 0}
+  distance: 0
+  targetPos: 0
 --- !u!1 &8940588972049715191
 GameObject:
   m_ObjectHideFlags: 0
@@ -265,7 +267,7 @@ GameObject:
   - component: {fileID: 6040785659118313719}
   m_Layer: 10
   m_Name: Attack Box
-  m_TagString: Player Hitbox
+  m_TagString: Enemy Hitbox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
