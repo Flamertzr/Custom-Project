@@ -451,6 +451,7 @@ RectTransform:
   - {fileID: 311815308}
   - {fileID: 1006224010}
   - {fileID: 676803523}
+  - {fileID: 1593989830}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -516,7 +517,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You Died to That? ........... Weakling
+  m_text: ...... My grandma can fight better than you
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -867,12 +868,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1593989828}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -3.6, z: 0}
-  m_LocalScale: {x: 1.8875, y: 0.8875, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -960.17645, y: -547.5229, z: 0}
+  m_LocalScale: {x: 3.9963243, y: 1.8790663, z: 2.1172578}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 498652749}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1885695599
 GameObject:
@@ -1019,4 +1020,3 @@ SceneRoots:
   - {fileID: 692478894}
   - {fileID: 83773659}
   - {fileID: 498652749}
-  - {fileID: 1593989830}
