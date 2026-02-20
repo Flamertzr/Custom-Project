@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 using TMPro;
 
-public class typewriterScript : MonoBehaviour
+public class deathTypewriterScript : MonoBehaviour
 {
 	Text _text;
 	TMP_Text _tmpProText;
@@ -17,24 +17,10 @@ public class typewriterScript : MonoBehaviour
 	// Use this for initialization
 	void Start()
 	{
-		_text = "";
+		_text = GetComponent<Text>()!;
 		_tmpProText = GetComponent<TMP_Text>()!;
 
-		if(_text != null)
-        {
-			writer = _text.text;
-			_text.text = "";
-
-			StartCoroutine("TypeWriterText");
-		}
-
-		if (_tmpProText != null)
-		{
-			writer = _tmpProText.text;
-			_tmpProText.text = "";
-
-			StartCoroutine("TypeWriterTMP");
-		}
+		randomText();
 	}
 
 	IEnumerator TypeWriterText()
@@ -83,8 +69,42 @@ public class typewriterScript : MonoBehaviour
 		}
 	}
 
-	public String randomText()
+	public void randomText()
 	{
-		int randomNumberInt = Random.Range(1, 11);
+		int random = Random.Range(1, 6);
+
+		if (random == 1)
+		{
+			writer = "My grandma can fight better than you.";
+		}
+		else if (random == 2)
+		{
+			writer = "Wait you died? HAHA Loser!";
+		}
+		else if (random == 3)
+		{
+			writer = "Imagine dying to that! Weakling.";
+		}
+		else if (random == 4)
+		{
+			writer = "Does not suprise me.";
+		}
+		else if (random == 5)
+		{
+			writer = "Filthy monkey who can't even use Jujutsu!";
+		}
+
+		StopAllCoroutines();
+
+		if (_text != null)
+		{
+			_text.text = "";
+			StartCoroutine(TypeWriterText());
+		}
+		else if (_tmpProText != null)
+		{
+			_tmpProText.text = "";
+			StartCoroutine(TypeWriterTMP());
+		}
 	}
 }
