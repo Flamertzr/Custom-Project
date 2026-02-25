@@ -512,7 +512,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: wejghvbfkdb
+  m_text: "Reito was born into the prestigious Tendo clan which produces\nmany talented
+    spirit users. Reito however was born with no spirit \nat all. Because of this,
+    Reito was unpopular within the clan and was\nconsidered a disgrace on the Tendo
+    name, he was  kicked out when \nhe turned 17. Leaving the clan with only himself
+    and a sword his \nyounger brother stole for him, he went into  the world filled
+    with \nevil spirits and villanous spirit user alike just trying to survive."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 27ee03e910ff52f4a9cc947faa8505e2, type: 2}
   m_sharedMaterial: {fileID: -2312479636383370448, guid: 27ee03e910ff52f4a9cc947faa8505e2, type: 2}
@@ -539,8 +544,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 19
+  m_fontSizeBase: 19
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -604,7 +609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::typewriterScript
   delayBeforeStart: 2
-  timeBtwChars: 0.1
+  timeBtwChars: 0.08
   leadingChar: 
   leadingCharBeforeDelay: 0
 --- !u!1 &1929224838
