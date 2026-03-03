@@ -5,6 +5,7 @@ public class banditFollowScript : MonoBehaviour
     [SerializeField] public float speed;
     public GameObject player;
     private Animator anim;
+    private banditAttackScript attkScript;
 
 
     public float distance;
@@ -19,12 +20,18 @@ public class banditFollowScript : MonoBehaviour
         originalScale = transform.localScale;
         hurtScript = GetComponent<banditHurtScript>();
         anim = GetComponent<Animator>();
+        attkScript = GetComponent<banditAttackScript>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (hurtScript.dead == false)
+
+        if (attkScript.close >= distance)
+        {
+            anim.SetBool("Idle", true);
+        }
+        if (hurtScript.dead == false && attkScript.close <= 200)
         {
             Vector2 direction = player.transform.position - transform.position;
             anim.SetBool("Walk", true);
@@ -41,6 +48,6 @@ public class banditFollowScript : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
         } else{
             anim.SetBool("Walk", false);
-        }    
+        }  
     }
 }

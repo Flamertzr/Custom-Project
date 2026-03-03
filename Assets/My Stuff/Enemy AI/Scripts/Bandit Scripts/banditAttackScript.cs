@@ -3,7 +3,7 @@ using UnityEngine;
 public class banditAttackScript : MonoBehaviour
 {
     [SerializeField] public float flinchDuration;
-    private float close;
+    public float close;
     private Animator anim;
     private banditFollowScript follow;
     private banditHurtScript HurtScript;
@@ -32,7 +32,7 @@ public class banditAttackScript : MonoBehaviour
         close = Vector2.Distance(transform.position, follow.player.transform.position);
         punchTimer -= punchCooldown;
 
-        if (close > 40)
+        if (close > 20)
         {
             anim.SetBool("Punch", false);
         } else 
