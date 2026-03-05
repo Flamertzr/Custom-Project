@@ -76,7 +76,7 @@ public class banditHurtScript : MonoBehaviour
         anim.SetBool("Dead", true);
         boxCollider.enabled = false;
         body.simulated = false;
-        if (stateInfo.IsName("Death Animation") && stateInfo.normalizedTime >= 1.0f )
+        if (stateInfo.IsName("death") && stateInfo.normalizedTime >= 1.0f )
         {
             Destroy(gameObject);
         }

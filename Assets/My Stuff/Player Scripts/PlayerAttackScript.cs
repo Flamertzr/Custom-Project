@@ -10,6 +10,7 @@ public class PlayerAttackScript : MonoBehaviour
     private BoxCollider2D boxCollider;
     private GameObject ult;
     private SpriteRenderer ultSprite;
+    private BoxCollider2D ultBoxCollider;
 
     public bool isAttacking = false;
     public bool isDashing = false;
@@ -42,6 +43,7 @@ public class PlayerAttackScript : MonoBehaviour
         ult = transform.Find("Player Ult").gameObject;
         ultAnim = ult.GetComponent<Animator>();
         ultSprite = ult.GetComponent<SpriteRenderer>();
+        ultBoxCollider = ult.GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -87,6 +89,7 @@ public class PlayerAttackScript : MonoBehaviour
                 ultSprite.sprite = null;
                 boxCollider.enabled = true;
                 currDmg = 0;
+                ultBoxCollider.size = new Vector3(0, 0, 0);
             }
         }
     }
