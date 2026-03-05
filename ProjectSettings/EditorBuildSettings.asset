@@ -27,7 +27,7 @@ EditorBuildSettings:
     path: Assets/My Stuff/Scenes/Levels/L1.unity
     guid: 383482d1f32ea964eaf19cddb86a110e
   - enabled: 1
-    path: Assets/My Stuff/Scenes/Backstory Scenes/Backstory 1 Text.unity
+    path: Assets/My Stuff/Scenes/Backstory Scenes/Backstory 1.unity
     guid: 1acd5d58caa6eef44b133f3ebb392b85
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

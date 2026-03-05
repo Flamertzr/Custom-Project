@@ -18,6 +18,6 @@ public class level1Button : MonoBehaviour
 
     public void startLevel()
     {
-        SceneManager.LoadScene("L1");
+        SceneManager.LoadScene("Backstory 1");
     }
 }
