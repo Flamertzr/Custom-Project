@@ -31,7 +31,7 @@ public class banditFollowScript : MonoBehaviour
         {
             anim.SetBool("Idle", true);
         }
-        if (hurtScript.dead == false && attkScript.close <= 200)
+        if (hurtScript.dead == false && attkScript.close <= 110)
         {
             Vector2 direction = player.transform.position - transform.position;
             anim.SetBool("Walk", true);
