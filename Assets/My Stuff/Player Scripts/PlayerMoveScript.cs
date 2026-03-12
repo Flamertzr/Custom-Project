@@ -16,6 +16,8 @@ public class PlayerMoveScript : MonoBehaviour
     private bool facingRight;
     private int jumps;
 
+    public bool inCutscene = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -63,7 +65,7 @@ public class PlayerMoveScript : MonoBehaviour
         {
             horizontalInput = Input.GetAxis("Horizontal");
             
-            if (horizontalInput > 0.01f && !playerAttack.isAttacking)
+            if (horizontalInput > 0.01f && !playerAttack.isAttacking && !inCutscene)
             {
                 facingRight = true;
                 anim.SetBool("Run", true);
@@ -71,7 +73,7 @@ public class PlayerMoveScript : MonoBehaviour
                 body.linearVelocity = new Vector2(Input.GetAxis("Horizontal") * speed, body.linearVelocity.y);
 
 
-            } else if (horizontalInput < -0.01f && !playerAttack.isAttacking)
+            } else if (horizontalInput < -0.01f && !playerAttack.isAttacking && !inCutscene)
             {
                 facingRight = false;
                 anim.SetBool("Run", true);
@@ -96,7 +98,7 @@ public class PlayerMoveScript : MonoBehaviour
                 jumps = 0;
             }
 
-            if(playerAttack.isDashing)
+            if(playerAttack.isDashing && !inCutscene)
             {
                 body.gravityScale = 0f;
                 body.linearVelocity = Vector2.zero;
@@ -112,7 +114,7 @@ public class PlayerMoveScript : MonoBehaviour
                 body.gravityScale = normGrav;
             }
 
-            if (playerAttack.isPhasing)
+            if (playerAttack.isPhasing && !inCutscene)
             {
                 body.gravityScale = 0f;
                 body.linearVelocity = Vector2.zero;

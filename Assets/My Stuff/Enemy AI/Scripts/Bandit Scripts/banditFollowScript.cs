@@ -3,7 +3,7 @@ using UnityEngine;
 public class banditFollowScript : MonoBehaviour
 {
     [SerializeField] public float speed;
-    public GameObject player;
+    public GameObject player = null;
     private Animator anim;
     private banditAttackScript attkScript;
 
