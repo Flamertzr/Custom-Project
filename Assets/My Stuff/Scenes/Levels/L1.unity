@@ -1032,14 +1032,14 @@ RectTransform:
   m_GameObject: {fileID: 154319832}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 4.2345157, y: 4.2345157, z: 2.1172578}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1804088176}
+  m_Father: {fileID: 2119308570}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 506, y: 241}
+  m_AnchoredPosition: {x: 610.0595, y: 348.06238}
   m_SizeDelta: {x: 700, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &154319835
@@ -2768,11 +2768,11 @@ Transform:
   m_GameObject: {fileID: 693122244}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -235.63667, y: -125.91913, z: 0}
+  m_LocalPosition: {x: -0.000076293945, y: 52.473877, z: 0}
   m_LocalScale: {x: 28.61303, y: 13.453809, z: 15.159221}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1804088176}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &693122246
 SpriteRenderer:
@@ -2923,9 +2923,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6ae620890b96fe4c92894379cfc75f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  banditTextStuff: {fileID: 1804088175}
   playerObject: {fileID: 1751810769}
   banditTextBox: {fileID: 693122244}
+  banditText: {fileID: 154319832}
   bandit1: {fileID: 1259304156}
   bandit2: {fileID: 2130936554}
 --- !u!1 &707427662
@@ -9012,39 +9012,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1804088175
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1804088176}
-  m_Layer: 0
-  m_Name: Bandit Text Stuff
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1804088176
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1804088175}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -461.27298, y: -162.19676, z: 0}
-  m_LocalScale: {x: 2.1172578, y: 2.1172578, z: 2.1172578}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 693122245}
-  - {fileID: 154319833}
-  m_Father: {fileID: 2119308570}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1822685949
 GameObject:
   m_ObjectHideFlags: 0
@@ -10010,7 +9977,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1804088176}
+  - {fileID: 154319833}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -10560,3 +10527,4 @@ SceneRoots:
   - {fileID: 695837904}
   - {fileID: 2119308570}
   - {fileID: 1597021323}
+  - {fileID: 693122245}

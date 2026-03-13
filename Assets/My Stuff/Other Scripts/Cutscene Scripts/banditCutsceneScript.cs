@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class banditCutsceneScript : MonoBehaviour
 {
-    [SerializeField] private GameObject banditTextStuff;
     [SerializeField] private GameObject playerObject;
     [SerializeField] private GameObject banditTextBox;
+    [SerializeField] private GameObject banditText;
     [SerializeField] private banditFollowScript bandit1;
     [SerializeField] private banditFollowScript bandit2;
     private PlayerMoveScript playerMove;
@@ -17,7 +17,19 @@ public class banditCutsceneScript : MonoBehaviour
     {
         playerMove = playerObject.GetComponent<PlayerMoveScript>();
 
-        banditTextStuff.SetActive(false);
+        banditTextBox.SetActive(false);
+        banditText.SetActive(false);
+    }
+
+    void Update()
+    {
+        camPos = Camera.main.transform.position;
+
+        banditTextBox.transform.position = new Vector3(
+            camPos.x,
+            camPos.y + 50,
+            0f
+        );
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -28,15 +40,8 @@ public class banditCutsceneScript : MonoBehaviour
 
             if (cutsceneActivated == 1)
             {
-                banditTextStuff.SetActive(true);
-
-                camPos = Camera.main.transform.position;
-
-                banditTextStuff.transform.position = new Vector3(
-                    camPos.x + 400,
-                    camPos.y + 100,
-                    camPos.z
-                );
+                banditTextBox.SetActive(true);
+                banditText.SetActive(true);
 
                 playerMove.inCutscene = true;
 
@@ -54,6 +59,7 @@ public class banditCutsceneScript : MonoBehaviour
 
         playerMove.inCutscene = false;
 
-        banditTextStuff.SetActive(false);
+        banditTextBox.SetActive(false);
+        banditText.SetActive(false);
     }
 }
