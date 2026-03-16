@@ -1062,7 +1062,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Give all your money Old Man!
+  m_text: Give us all your money!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 27ee03e910ff52f4a9cc947faa8505e2, type: 2}
   m_sharedMaterial: {fileID: -2312479636383370448, guid: 27ee03e910ff52f4a9cc947faa8505e2, type: 2}
@@ -1150,9 +1150,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 154319832}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb29074f8c3433943a382fcf7b24063b, type: 3}
+  m_Script: {fileID: 11500000, guid: 3409864067a1776468927ba141e53ee2, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::typewriterScript
+  m_EditorClassIdentifier: Assembly-CSharp::banditDialogueTypewriterScript
   delayBeforeStart: 0
   timeBtwChars: 0.1
   leadingChar: 
@@ -2435,7 +2435,7 @@ PrefabInstance:
     - target: {fileID: 8731266973726440679, guid: bd8ba2f2ca36fb547b710f3826b1575e, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2130936551}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5839,12 +5839,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1259304153 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6471603299130348645, guid: bd8ba2f2ca36fb547b710f3826b1575e, type: 3}
+  m_PrefabInstance: {fileID: 4476471993132999606}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1259304156 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8731266973726440679, guid: bd8ba2f2ca36fb547b710f3826b1575e, type: 3}
   m_PrefabInstance: {fileID: 4476471993132999606}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1259304153}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 914f4838b5748f244b82b7e7e5901bc0, type: 3}
@@ -10070,12 +10075,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2130936551 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6471603299130348645, guid: bd8ba2f2ca36fb547b710f3826b1575e, type: 3}
+  m_PrefabInstance: {fileID: 529831135}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2130936554 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8731266973726440679, guid: bd8ba2f2ca36fb547b710f3826b1575e, type: 3}
   m_PrefabInstance: {fileID: 529831135}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2130936551}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 914f4838b5748f244b82b7e7e5901bc0, type: 3}
@@ -10330,7 +10340,7 @@ PrefabInstance:
     - target: {fileID: 8731266973726440679, guid: bd8ba2f2ca36fb547b710f3826b1575e, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1259304153}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

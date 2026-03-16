@@ -52,7 +52,7 @@ public class banditCutsceneScript : MonoBehaviour
 
     private System.Collections.IEnumerator cutsceneTimer()
     {
-        yield return new WaitForSeconds(200f);
+        yield return new WaitForSeconds(2f);
 
         bandit1.player = playerObject;
         bandit2.player = playerObject;

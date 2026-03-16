@@ -15,26 +15,35 @@ public class typewriterScript : MonoBehaviour
 	[SerializeField] bool leadingCharBeforeDelay = false;
 
 	// Use this for initialization
-	void Start()
+
+	void Awake()
 	{
-		_text = GetComponent<Text>()!;
-		_tmpProText = GetComponent<TMP_Text>()!;
+		_text = GetComponent<Text>();
+		_tmpProText = GetComponent<TMP_Text>();
 
-		if(_text != null)
-        {
+		if (_text != null)
+		{
 			writer = _text.text;
-			_text.text = "";
-
-			StartCoroutine("TypeWriterText");
 		}
 
 		if (_tmpProText != null)
 		{
 			writer = _tmpProText.text;
-			_tmpProText.text = "";
-
-			StartCoroutine("TypeWriterTMP");
 		}
+	}
+	void OnEnable()
+	{
+			if (_text != null)
+		{
+			_text.text = "";
+			StartCoroutine(TypeWriterText());
+		}
+
+		if (_tmpProText != null)
+		{
+			_tmpProText.text = "";
+			StartCoroutine(TypeWriterTMP());
+    }
 	}
 
 	IEnumerator TypeWriterText()

@@ -85,7 +85,7 @@ public class PlayerMoveScript : MonoBehaviour
                 anim.SetBool("Run", false);
             }
 
-            if (((Input.GetKeyDown(KeyCode.Space)) || (Input.GetKeyDown(KeyCode.UpArrow)))&& !playerAttack.isDashing)
+            if (((Input.GetKeyDown(KeyCode.Space)) || (Input.GetKeyDown(KeyCode.UpArrow)))&& !playerAttack.isDashing && !inCutscene)
             {
                 Jump();
             }
