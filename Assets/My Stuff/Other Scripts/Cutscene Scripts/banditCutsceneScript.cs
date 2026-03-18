@@ -4,7 +4,10 @@ public class banditCutsceneScript : MonoBehaviour
 {
     [SerializeField] private GameObject playerObject;
     [SerializeField] private GameObject banditTextBox;
-    [SerializeField] private GameObject banditText;
+    [SerializeField] private GameObject banditText1;
+    [SerializeField] private GameObject banditText2;
+    [SerializeField] private GameObject banditText3;
+    [SerializeField] private GameObject banditText4;
     [SerializeField] private banditFollowScript bandit1;
     [SerializeField] private banditFollowScript bandit2;
     private PlayerMoveScript playerMove;
@@ -18,7 +21,10 @@ public class banditCutsceneScript : MonoBehaviour
         playerMove = playerObject.GetComponent<PlayerMoveScript>();
 
         banditTextBox.SetActive(false);
-        banditText.SetActive(false);
+        banditText1.SetActive(false);
+        banditText2.SetActive(false);
+        banditText3.SetActive(false);
+        banditText4.SetActive(false);
     }
 
     void Update()
@@ -40,11 +46,6 @@ public class banditCutsceneScript : MonoBehaviour
 
             if (cutsceneActivated == 1)
             {
-                banditTextBox.SetActive(true);
-                banditText.SetActive(true);
-
-                playerMove.inCutscene = true;
-
                 StartCoroutine(cutsceneTimer());
             }
         }
@@ -52,14 +53,28 @@ public class banditCutsceneScript : MonoBehaviour
 
     private System.Collections.IEnumerator cutsceneTimer()
     {
-        yield return new WaitForSeconds(2f);
+        playerMove.inCutscene = true;
+
+        banditTextBox.SetActive(true);
+        banditText1.SetActive(true);
+        yield return new WaitForSeconds(4f);
+        banditText1.SetActive(false);
+
+        banditText2.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        banditText2.SetActive(false);
+
+        banditText3.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        banditText3.SetActive(false);
+
+        banditText4.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        banditText4.SetActive(false);
 
         bandit1.player = playerObject;
         bandit2.player = playerObject;
-
         playerMove.inCutscene = false;
-
         banditTextBox.SetActive(false);
-        banditText.SetActive(false);
     }
 }
