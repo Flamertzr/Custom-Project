@@ -7,6 +7,8 @@ public class banditHurtScript : MonoBehaviour
     [SerializeField] public int health = 100;
     [SerializeField] public float flinchDuration;
 
+    [SerializeField] private oldManCutsceneScript oldman;
+
     public bool dead = false;
     private bool flashing = false;
 
@@ -40,6 +42,7 @@ public class banditHurtScript : MonoBehaviour
         if (health <=0)
         {
             death();
+            oldman.banditsDead = true;
         }
     }
 

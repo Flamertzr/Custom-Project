@@ -10,6 +10,7 @@ public class banditCutsceneScript : MonoBehaviour
     [SerializeField] private GameObject banditText4;
     [SerializeField] private banditFollowScript bandit1;
     [SerializeField] private banditFollowScript bandit2;
+
     private PlayerMoveScript playerMove;
 
     private int cutsceneActivated = 0;
