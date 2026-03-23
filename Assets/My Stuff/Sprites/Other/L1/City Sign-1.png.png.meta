@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 849d00a181c71164392160ee699d3279
+guid: 6c5c5c80c6b24174bab259ef56964c3e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6102646459530474168
-    second: Light Technique Manifestation-1.png (1)_0
+      213: 7216743555143096605
+    second: City Sign-1.png_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Light Technique Manifestation-1.png (1)_0
+      name: City Sign-1.png_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 95
-        width: 1024
-        height: 754
+        x: 335
+        y: 239
+        width: 258
+        height: 370
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 84d04e5d06b0f4ba0800000000000000
-      internalID: -6102646459530474168
+      spriteID: d19d4670706072460800000000000000
+      internalID: 7216743555143096605
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Light Technique Manifestation-1.png (1)_0: -6102646459530474168
+      City Sign-1.png_0: 7216743555143096605
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

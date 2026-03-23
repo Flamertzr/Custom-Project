@@ -16,6 +16,7 @@ public class oldManCutsceneScript : MonoBehaviour
     private Vector3 camPos;
 
     public bool banditsDead = false;
+    public bool talkToOldMan = false;
 
     void Start()
     {
@@ -76,5 +77,7 @@ public class oldManCutsceneScript : MonoBehaviour
 
         playerMove.inCutscene = false;
         oldManTextBox.SetActive(false);
+
+        talkToOldMan = true;
     }
 }

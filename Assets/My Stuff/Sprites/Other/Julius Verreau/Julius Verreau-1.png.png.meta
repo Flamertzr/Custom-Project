@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 849d00a181c71164392160ee699d3279
+guid: 44461dd6fc7aef642a0bc4cfca0d0fae
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6102646459530474168
-    second: Light Technique Manifestation-1.png (1)_0
+      213: 3205560010724134659
+    second: Julius Verreau-1.png_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Light Technique Manifestation-1.png (1)_0
+      name: Julius Verreau-1.png_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 95
-        width: 1024
-        height: 754
+        x: 319
+        y: 383
+        width: 354
+        height: 498
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 84d04e5d06b0f4ba0800000000000000
-      internalID: -6102646459530474168
+      spriteID: 30fc86198df6c7c20800000000000000
+      internalID: 3205560010724134659
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Light Technique Manifestation-1.png (1)_0: -6102646459530474168
+      Julius Verreau-1.png_0: 3205560010724134659
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
