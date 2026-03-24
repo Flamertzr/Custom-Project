@@ -8,6 +8,7 @@ public class banditCutsceneScript : MonoBehaviour
     [SerializeField] private GameObject banditText2;
     [SerializeField] private GameObject banditText3;
     [SerializeField] private GameObject banditText4;
+    [SerializeField] private GameObject exclamMark;
     [SerializeField] private banditFollowScript bandit1;
     [SerializeField] private banditFollowScript bandit2;
 
@@ -22,6 +23,7 @@ public class banditCutsceneScript : MonoBehaviour
         playerMove = playerObject.GetComponent<PlayerMoveScript>();
 
         banditTextBox.SetActive(false);
+        exclamMark.SetActive(false);
         banditText1.SetActive(false);
         banditText2.SetActive(false);
         banditText3.SetActive(false);
@@ -61,9 +63,11 @@ public class banditCutsceneScript : MonoBehaviour
         yield return new WaitForSeconds(4f);
         banditText1.SetActive(false);
 
+        exclamMark.SetActive(true);
         banditText2.SetActive(true);
         yield return new WaitForSeconds(3f);
         banditText2.SetActive(false);
+        exclamMark.SetActive(false);
 
         banditText3.SetActive(true);
         yield return new WaitForSeconds(3f);
