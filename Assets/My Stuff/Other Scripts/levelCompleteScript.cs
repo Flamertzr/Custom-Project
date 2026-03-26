@@ -1,10 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class levelCompleteScript : MonoBehaviour
 {
     [SerializeField] private oldManCutsceneScript oldManScript;
+    [SerializeField] private fadeToBlack fade;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -27,9 +29,15 @@ public class levelCompleteScript : MonoBehaviour
 
     public void returnToLevels()
     {
-        // Make in coroutine
-        // Keep player moving + lock controls
-        // Fade to black
+        fade.StartFadeOut();
+        StartCoroutine(loadNext());
+        
+    }
+
+    IEnumerator loadNext()
+    {
+        yield return new WaitForSeconds(2.5f);
         SceneManager.LoadScene("Levels");
+        yield return null;
     }
 }
