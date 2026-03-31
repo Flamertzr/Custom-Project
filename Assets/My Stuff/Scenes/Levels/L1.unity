@@ -1848,7 +1848,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 167006325}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 761a8b8761cd91f4fbf7d111a02f8c80, type: 3}
+  m_Script: {fileID: 11500000, guid: ece267e0760390143ba921e41fe4b893, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::levelCompleteScript
   oldManScript: {fileID: 1597431787}
@@ -10607,7 +10607,6 @@ Transform:
   m_Children:
   - {fileID: 1088206271}
   - {fileID: 1936664664}
-  - {fileID: 1751810785}
   m_Father: {fileID: 1940879288}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1313386814
@@ -17284,7 +17283,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1295460818}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1451636709852645201, guid: ee2fe335d92ba7d4e85260f39c05100f, type: 3}
       propertyPath: iframes
@@ -17320,11 +17319,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7194264823600216187, guid: ee2fe335d92ba7d4e85260f39c05100f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -23.500679
+      value: -34.299988
       objectReference: {fileID: 0}
     - target: {fileID: 7194264823600216187, guid: ee2fe335d92ba7d4e85260f39c05100f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.837841
+      value: -47.800003
       objectReference: {fileID: 0}
     - target: {fileID: 7194264823600216187, guid: ee2fe335d92ba7d4e85260f39c05100f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17620,3 +17619,4 @@ SceneRoots:
   - {fileID: 1458349476}
   - {fileID: 1940879288}
   - {fileID: 1577589086}
+  - {fileID: 592944415552446588}
