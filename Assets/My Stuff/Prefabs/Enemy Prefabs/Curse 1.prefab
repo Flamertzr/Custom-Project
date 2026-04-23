@@ -215,7 +215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   iframes: 0
-  iframesDuration: 0
+  iframesDuration: 0.8
   health: 100
   flinchDuration: 0
   dead: 0
