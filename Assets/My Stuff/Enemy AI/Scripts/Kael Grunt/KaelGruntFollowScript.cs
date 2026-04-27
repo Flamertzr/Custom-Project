@@ -6,16 +6,13 @@ public class kaelGruntFollowScript : MonoBehaviour
     public GameObject player;
     private Animator anim;
 
-
-
     public float distance;
-    public float targetPos;
-    
+
     private kaelGruntHurtScript hurtScript;
     private kaelGruntAttackScript attkScript;
 
     private Vector3 originalScale;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
         originalScale = transform.localScale;
@@ -24,26 +21,37 @@ public class kaelGruntFollowScript : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-   void Update()
+    void Update()
     {
-        if (hurtScript.dead == false && attkScript.close >= 50)
+        if (hurtScript.dead == false)
         {
-            Vector2 direction = player.transform.position - transform.position;
-            anim.SetBool("Walk", true);
-
-            if (direction.x > 0f && attkScript.isAttacking)
+            float directionX = player.transform.position.x - transform.position.x;
+            
+            
+            // 🔥 Always face the player
+            if (directionX > 0)
             {
                 transform.localScale = new Vector3(Mathf.Abs(originalScale.x), originalScale.y, originalScale.z);
-            } else if (direction.x < 0f && attkScript.isAttacking) 
+            }
+            else if (directionX < 0)
             {
                 transform.localScale = new Vector3(-Mathf.Abs(originalScale.x), originalScale.y, originalScale.z);
             }
-            distance = Vector2.Distance(transform.position, player.transform.position);
-            Vector2 targetPos = new Vector2(player.transform.position.x, transform.position.y);
-            transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
-        } else{
-            anim.SetBool("Walk", false);
+
+            // Movement logic
+            if (attkScript.close >= 50)
+            {
+                anim.SetBool("Walk", true);
+
+                distance = Vector2.Distance(transform.position, player.transform.position);
+                Vector2 targetPos = new Vector2(player.transform.position.x, transform.position.y);
+
+                transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
+            }
+            else
+            {
+                anim.SetBool("Walk", false);
+            }
         }
     }
 }
