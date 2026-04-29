@@ -38,7 +38,7 @@ public class kaelGruntAttackScript : MonoBehaviour
         {
             attkTimer -= Time.deltaTime;
 
-            if (!isAttacking && attkTimer <= 0)
+            if (!isAttacking && attkTimer <= 0 /*&& !HurtScript.stunned*/)
             {
                 StartAttack();
             }
@@ -54,6 +54,7 @@ public class kaelGruntAttackScript : MonoBehaviour
                 EndAttack();
             }
         }
+        hurtTimer -= Time.deltaTime;
     }
 
     void StartAttack()

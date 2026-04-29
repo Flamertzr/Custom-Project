@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 4334779828194123663}
   - component: {fileID: 7415211236611576118}
   - component: {fileID: 8158360448440323669}
-  - component: {fileID: 8706971470663331878}
   m_Layer: 0
   m_Name: Kael Grunt
   m_TagString: Untagged
@@ -205,9 +204,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aae8a297324c7b345992e6717c8a6f94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  flinchDuration: 0.2
+  flinchDuration: 1.2
   blast: {fileID: 3417309434912272923, guid: 17e931b57ee7dc248aaba56893e5f00d, type: 3}
   firePoint: {fileID: 8833825027049900667}
+  blastSizeMultiplier: 1
   blastSpeed: 20
   hurtTimer: 0
   close: 0
@@ -244,20 +244,7 @@ MonoBehaviour:
   health: 80
   flinchDuration: 0
   dead: 0
---- !u!114 &8706971470663331878
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4289608913164442310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 887c4d97302da764981c0cf26bd854fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::enemyGeneralScript
-  dmg: 7
-  damage: 0
+  stunned: 0
 --- !u!1 &8745458820230014574
 GameObject:
   m_ObjectHideFlags: 0
