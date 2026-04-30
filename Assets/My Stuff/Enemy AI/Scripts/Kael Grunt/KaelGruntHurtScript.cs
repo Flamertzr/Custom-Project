@@ -104,9 +104,7 @@ public class kaelGruntHurtScript : MonoBehaviour
     private System.Collections.IEnumerator flinch()
     {
         stunned = true;
-        anim.SetBool("Stun", true);
         yield return new WaitForSeconds(flinchDuration);
-        anim.SetBool("Stun", false);
         stunned = false;
     }
 }
