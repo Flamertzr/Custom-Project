@@ -61,11 +61,11 @@ public class PlayerMoveScript : MonoBehaviour
 
     private void movement()
     {
-        if (playerHealth.currHealth > 0)   
+        if (playerHealth.currHealth > 0 && !inCutscene)   
         {
             horizontalInput = Input.GetAxis("Horizontal");
             
-            if (horizontalInput > 0.01f && !playerAttack.isAttacking && !inCutscene)
+            if (horizontalInput > 0.01f && !playerAttack.isAttacking)
             {
                 facingRight = true;
                 anim.SetBool("Run", true);
@@ -73,7 +73,7 @@ public class PlayerMoveScript : MonoBehaviour
                 body.linearVelocity = new Vector2(Input.GetAxis("Horizontal") * speed, body.linearVelocity.y);
 
 
-            } else if (horizontalInput < -0.01f && !playerAttack.isAttacking && !inCutscene)
+            } else if (horizontalInput < -0.01f && !playerAttack.isAttacking)
             {
                 facingRight = false;
                 anim.SetBool("Run", true);

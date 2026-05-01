@@ -241,7 +241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   iframes: 0
   iframesDuration: 0
-  health: 80
+  health: 40
   flinchDuration: 0
   dead: 0
   stunned: 0
