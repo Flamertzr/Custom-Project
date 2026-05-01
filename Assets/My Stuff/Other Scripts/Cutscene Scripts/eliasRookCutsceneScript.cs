@@ -129,7 +129,7 @@ public class eliasRookCutsceneScript : MonoBehaviour
         eliasLeft.SetActive(false);
         eliasTextBox.SetActive(false);
         bandit1.SetActive(true);
-        yield return new WaitForSeconds(1f/* */);
+        yield return new WaitForSeconds(10f);
 
         eliasTextBox.SetActive(true);
         eliasRight.SetActive(true);
@@ -137,7 +137,7 @@ public class eliasRookCutsceneScript : MonoBehaviour
         eliasRight.SetActive(false);
         eliasTextBox.SetActive(false);
         bandit3.SetActive(true);
-        yield return new WaitForSeconds(1f/* */);
+        yield return new WaitForSeconds(10f);
 
         eliasTextBox.SetActive(true);
         eliasLeft.SetActive(true);
@@ -145,7 +145,7 @@ public class eliasRookCutsceneScript : MonoBehaviour
         eliasLeft.SetActive(false);
         eliasTextBox.SetActive(false);
         bandit2.SetActive(true);
-        yield return new WaitForSeconds(1f/* */);
+        yield return new WaitForSeconds(10f);
 
         eliasTextBox.SetActive(true);
         eliasRight.SetActive(true);
@@ -153,7 +153,7 @@ public class eliasRookCutsceneScript : MonoBehaviour
         eliasRight.SetActive(false);
         eliasTextBox.SetActive(false);
         bandit4.SetActive(true);
-        yield return new WaitForSeconds(1f/* */);
+        yield return new WaitForSeconds(10f);
 
         cutscene1Complete = true;
     }
