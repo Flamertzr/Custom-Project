@@ -24,17 +24,17 @@ public class eliasRookCutsceneScript : MonoBehaviour
     [SerializeField] private GameObject bandit1;
     [SerializeField] private GameObject bandit2;
     [SerializeField] private GameObject bandit3;
-    [SerializeField] private GameObject bandit4;
+    [SerializeField] public GameObject bandit4;
 
     private PlayerMoveScript playerMove;
     private Rigidbody2D playerBody;
     private Animator eliasAnim;
     private Rigidbody2D eliasBody;
 
-    private bool cutscene1Triggered = false;
+    public bool cutscene1Triggered = false;
 
-    private bool cutscene1Complete = false;
-    private bool cutscene2Complete = false;
+    public bool cutscene1Complete = false;
+    public bool cutscene2Complete = false;
 
     private Vector3 camPos;
 
@@ -205,6 +205,7 @@ public class eliasRookCutsceneScript : MonoBehaviour
         eliasAnim.SetBool("Walk", true);
         yield return new WaitForSeconds(2f);
         
+        cutscene2Complete = true;
         playerMove.inCutscene = false;
     }
 }
