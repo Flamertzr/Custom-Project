@@ -31,7 +31,10 @@ public class kaelMashCutsceneScript : MonoBehaviour
         kaelBody = kael.GetComponent<Rigidbody2D>();
 
         kaelTextBox.SetActive(false);
-        kaelText1.SetActive(false);    
+        kaelText1.SetActive(false);   
+
+        eliasTextBox.SetActive(false);
+        eliasText1.SetActive(false); 
     }
 
     void Update()

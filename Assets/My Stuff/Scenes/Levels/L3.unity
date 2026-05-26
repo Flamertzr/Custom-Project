@@ -3169,7 +3169,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -10623,7 +10623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   player: {fileID: 1021156359}
-  kael: {fileID: 0}
+  kael: {fileID: 561761287}
   kaelTextBox: {fileID: 1277452688}
   kaelText1: {fileID: 1476115663}
   eliasTextBox: {fileID: 2037260683}
