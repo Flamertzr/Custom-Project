@@ -458,10 +458,7 @@ MonoBehaviour:
     Ability
     2 - X
 
-    Ability 3 - C
-
-
-    Ultimate - G'
+    Ability 3 - C'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 27ee03e910ff52f4a9cc947faa8505e2, type: 2}
   m_sharedMaterial: {fileID: -2312479636383370448, guid: 27ee03e910ff52f4a9cc947faa8505e2, type: 2}
